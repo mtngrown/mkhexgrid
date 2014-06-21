@@ -24,6 +24,7 @@
 #include <map>
 #include <stdexcept>
 #include <string>
+
 using namespace std;
 
 #include <boost/lexical_cast.hpp>
@@ -31,7 +32,7 @@ using namespace boost;
 
 #include <getopt.h>
 
-#include "grid.h"
+#include "./grid.h"
 
 void parse_spec(istream &in, map<string, string> &opt);
 void print_help();
@@ -148,7 +149,7 @@ int main(int argc, char **argv)
       Grid g(opt);
       g.draw();
    }
-   catch (exception &e) {
+   catch (std::exception &e) {
       cerr << argv[0] << ": " << e.what() << endl;
       exit(1);
    }
