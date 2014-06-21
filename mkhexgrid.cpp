@@ -81,8 +81,7 @@ struct option long_options[] = {
 };
 
 
-int main(int argc, char **argv)
-{
+int main(int argc, char **argv) {
    map<string, string> opt;
 
    int c;
@@ -118,12 +117,12 @@ int main(int argc, char **argv)
       if (optind < argc) {
          if (opt.find("infile") != opt.end())
             throw runtime_error("specfile specified twice on command line");
-         
+
          opt["infile"] = argv[optind++];
 
          // get name of outfile, if given as a positional parameter
          if (optind < argc) {
-            if (opt.find("outfile") != opt.end()) 
+            if (opt.find("outfile") != opt.end())
              throw runtime_error("output file specified twice on command line");
             opt["outfile"] = argv[optind++];
 
@@ -134,7 +133,7 @@ int main(int argc, char **argv)
       // read and parse specfile
       map<string,string>::const_iterator i = opt.find("infile");
       if (i != opt.end()) {
-         if (i->second == "-") parse_spec(cin, opt); 
+         if (i->second == "-") parse_spec(cin, opt);
          else {
             ifstream in;
             in.open(i->second.c_str(), ios::in | ios::binary);
@@ -143,13 +142,12 @@ int main(int argc, char **argv)
             parse_spec(in, opt);
             in.close();
          }
-      } 
-   
+      }
+
       // draw hex grid
       Grid g(opt);
       g.draw();
-   }
-   catch (std::exception &e) {
+   } catch (std::exception &e) {
       cerr << argv[0] << ": " << e.what() << endl;
       exit(1);
    }
@@ -158,14 +156,13 @@ int main(int argc, char **argv)
 }
 
 
-void parse_spec(istream &in, map<string, string> &opt)
-{
+void parse_spec(istream &in, map<string, string> &opt) {
    string key, val;
    unsigned int line = 1, col = 0;
    char c;
    enum { START, KEY, PRE_EQ, POST_EQ, VAL, QVAL, GUARD, END }
       state = START;
-   
+
    while (in.get(c)) {
       ++col;
       switch (state) {
@@ -361,7 +358,7 @@ void parse_spec(istream &in, map<string, string> &opt)
          break;
       }
    }
-   
+
    switch (state) {
    case START:
    case END:
@@ -376,13 +373,12 @@ void parse_spec(istream &in, map<string, string> &opt)
          " column " + lexical_cast<string>(col));
    case VAL:
       if (opt.find(key) == opt.end()) opt[key] = val;
-      break; 
+      break;
    }
 }
 
 
-void print_help()
-{
+void print_help() {
    cout <<
 "Usage: mkhexgrid [OPTION]... [SPECFILE [OUTFILE]]\n"
 "Make hexagonal grids.\n"
@@ -399,8 +395,8 @@ void print_help()
 "   --margin=T,R,B,L         set image margins independently\n"
 "   --grid-color=COLOR       set grid color to COLOR\n"
 "   --grid-opacity=OPACITY   set grid opacity to OPACITY\n"
-"   --grid-width=SIZE        set width of grid lines to SIZE\n" 
-"   --grid-grain=G           set grid grain, G = h, v\n"    
+"   --grid-width=SIZE        set width of grid lines to SIZE\n"
+"   --grid-grain=G           set grid grain, G = h, v\n"
 "   --grid-start=S           set first column/row to start in (i) or out (o)\n"
 "   --coord-color=COLOR      set coordinates color to COLOR\n"
 "   --coord-opacity=OPACITY  set coordinates opacity to OPACITY\n"
@@ -417,7 +413,7 @@ void print_help()
 "   --coord-origin=O         set coordinate origin O = ul, ur, ll, lr\n"
 "   --bg-color=COLOR         set background color to COLOR\n"
 "   --bg-opacity=OPACITY     set background opacity to OPACITY\n"
-"   --matte                  clip background at margins\n"               
+"   --matte                  clip background at margins\n"
 "   --center-style=STYLE     set hex center style STYLE = n, d, c\n"
 "   --center-color=COLOR     set hex center color to COLOR\n"
 "   --center-size=SIZE       set hex center size to SIZE\n"
