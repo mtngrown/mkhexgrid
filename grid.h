@@ -77,6 +77,7 @@ class Grid {
 
       bool antialiased,  // antiailiasing
            lowfirstcol,  // first column is high or low
+           sandwich,     // sandwich style hexes
            matte;        // matte around background
 
       enum Grain { Vertical, Horizontal } grain;

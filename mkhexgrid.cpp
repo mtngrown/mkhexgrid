@@ -48,6 +48,7 @@ struct option long_options[] = {
    { "grid-thickness",     1, 0, 0 },
    { "grid-grain",         1, 0, 0 },
    { "grid-start",         1, 0, 0 },
+   { "grid-sandwich",      1, 0, 0 },
    { "coord-color",        1, 0, 0 },
    { "coord-opacity",      1, 0, 0 },
    { "coord-format",       1, 0, 0 },
@@ -327,6 +328,7 @@ void print_help() {
 "   --grid-width=SIZE        set width of grid lines to SIZE\n"
 "   --grid-grain=G           set grid grain, G = h, v\n"
 "   --grid-start=S           set first column/row to start in (i) or out (o)\n"
+"   --grid-sandwich=f        set draw rows or columns in sandwich mode (t) or not (f)\n"
 "   --coord-color=COLOR      set coordinates color to COLOR\n"
 "   --coord-opacity=OPACITY  set coordinates opacity to OPACITY\n"
 "   --coord-format=FORMAT    set coordinates format to FORMAT\n"
