@@ -34,9 +34,6 @@ using namespace boost;
 
 #include "./grid.h"
 
-void parse_spec(istream &in, map<string, string> &opt);
-void print_help();
-
 struct option long_options[] = {
    { "hex-width",          1, 0, 0 },
    { "hex-height",         1, 0, 0 },
@@ -79,81 +76,6 @@ struct option long_options[] = {
    { "version",            0, 0, 'v' },
    { 0, 0, 0, 0 }
 };
-
-
-int main(int argc, char **argv) {
-   map<string, string> opt;
-
-   int c;
-   int option_index = 0;
-
-   while (1) {
-      c = getopt_long(argc, argv, "i:o:", long_options, &option_index);
-      if (c == -1) break;  // end of options
-
-      switch (c) {
-      case 0:
-         opt[long_options[option_index].name] = optarg ? optarg : "";
-         break;
-      case 'i':
-         opt["infile"] = optarg;
-         break;
-      case 'o':
-         opt["outfile"] = optarg;
-         break;
-      case 'v':
-         cout << "mkhexgrid version " << VERSION << endl;
-         exit(0);
-      case 'h':
-         print_help();
-         exit(0);
-      default:
-         exit(1);    // getopt produces an error message
-      }
-   }
-
-   try {
-      // get name of specfile, if given as a positional parameter
-      if (optind < argc) {
-         if (opt.find("infile") != opt.end())
-            throw runtime_error("specfile specified twice on command line");
-
-         opt["infile"] = argv[optind++];
-
-         // get name of outfile, if given as a positional parameter
-         if (optind < argc) {
-            if (opt.find("outfile") != opt.end())
-             throw runtime_error("output file specified twice on command line");
-            opt["outfile"] = argv[optind++];
-
-            if (optind < argc) throw runtime_error("too many arguments");
-         }
-      }
-
-      // read and parse specfile
-      map<string,string>::const_iterator i = opt.find("infile");
-      if (i != opt.end()) {
-         if (i->second == "-") parse_spec(cin, opt);
-         else {
-            ifstream in;
-            in.open(i->second.c_str(), ios::in | ios::binary);
-            if (!in)
-             throw runtime_error("cannot read spec file `" + i->second + "'");
-            parse_spec(in, opt);
-            in.close();
-         }
-      }
-
-      // draw hex grid
-      Grid g(opt);
-      g.draw();
-   } catch (std::exception &e) {
-      cerr << argv[0] << ": " << e.what() << endl;
-      exit(1);
-   }
-
-   return 0;
-}
 
 
 void parse_spec(istream &in, map<string, string> &opt) {
@@ -433,4 +355,80 @@ void print_help() {
 "\n"
 "Please visit http:://www.nomic.net/~uckelman/mkhexgrid for updates and bug\n"
 "reports.\n";
+}
+
+
+int
+main(int argc, char **argv) {
+   map<string, string> opt;
+
+   int c;
+   int option_index = 0;
+
+   while (1) {
+      c = getopt_long(argc, argv, "i:o:", long_options, &option_index);
+      if (c == -1) break;  // end of options
+
+      switch (c) {
+      case 0:
+         opt[long_options[option_index].name] = optarg ? optarg : "";
+         break;
+      case 'i':
+         opt["infile"] = optarg;
+         break;
+      case 'o':
+         opt["outfile"] = optarg;
+         break;
+      case 'v':
+         cout << "mkhexgrid version " << VERSION << endl;
+         exit(0);
+      case 'h':
+         print_help();
+         exit(0);
+      default:
+         exit(1);    // getopt produces an error message
+      }
+   }
+
+   try {
+      // get name of specfile, if given as a positional parameter
+      if (optind < argc) {
+         if (opt.find("infile") != opt.end())
+            throw runtime_error("specfile specified twice on command line");
+
+         opt["infile"] = argv[optind++];
+
+         // get name of outfile, if given as a positional parameter
+         if (optind < argc) {
+            if (opt.find("outfile") != opt.end())
+             throw runtime_error("output file specified twice on command line");
+            opt["outfile"] = argv[optind++];
+
+            if (optind < argc) throw runtime_error("too many arguments");
+         }
+      }
+
+      // read and parse specfile
+      map<string,string>::const_iterator i = opt.find("infile");
+      if (i != opt.end()) {
+         if (i->second == "-") parse_spec(cin, opt);
+         else {
+            ifstream in;
+            in.open(i->second.c_str(), ios::in | ios::binary);
+            if (!in)
+             throw runtime_error("cannot read spec file `" + i->second + "'");
+            parse_spec(in, opt);
+            in.close();
+         }
+      }
+
+      // draw hex grid
+      Grid g(opt);
+      g.draw();
+   } catch (std::exception &e) {
+      cerr << argv[0] << ": " << e.what() << endl;
+      exit(1);
+   }
+
+   return 0;
 }
