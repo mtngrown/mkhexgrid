@@ -44,6 +44,44 @@ void Grid::svg_write_header(ofstream & out) {
 }
 
 
+void Grid::svg_define_centers(ofstream & out) {
+
+  // center definition
+  if (center_style != Centerless) {
+    switch (center_style) {
+    case Cross:
+       out << "<path id=\"cross\" d=\""
+           << "M 0 0 m " << -center_size << " 0"
+           << " h " << 2*center_size
+           << " M 0 0 m 0 " << -center_size
+           << " v " << 2*center_size
+           << "\" />\n";
+
+       out << "<g id=\"c-row\">\n";
+       for (int c = 0; c < cols; ++c) {
+          out << "<use x=\"" << (c*0.75 + 0.5)*hw << "\" "
+                 "y=\"" << 0.5*hh*((c+lowfirstcol)%2) << "\" "
+                 "xlink:href=\"#cross\" />\n";
+       }
+       out << "</g>\n";
+       break;
+
+    case Dot:
+       out << "<g id=\"c-row\">\n";
+       for (int c = 0; c < cols; ++c) {
+          out << "<circle cx=\"" << (c*0.75 + 0.5)*hw
+              << "\" cy=\"" << 0.5*hh*((c+lowfirstcol)%2)
+              << "\" r=\"" << center_size << "\" />\n";
+       }
+       out << "</g>\n";
+       break;
+    default:
+       break;
+    }
+  }
+}
+
+
 void Grid::draw_svg()
 {
    if (outfile.empty() || outfile == "-") {
@@ -60,39 +98,7 @@ void Grid::draw_svg()
    // write definitions for repeated elements
    out << "<defs>\n";
 
-   // center definition
-   if (center_style != Centerless) {
-      switch (center_style) {
-      case Cross:
-         out << "<path id=\"cross\" d=\""
-             << "M 0 0 m " << -center_size << " 0"
-             << " h " << 2*center_size
-             << " M 0 0 m 0 " << -center_size
-             << " v " << 2*center_size
-             << "\" />\n";
-
-         out << "<g id=\"c-row\">\n";
-         for (int c = 0; c < cols; ++c) {
-            out << "<use x=\"" << (c*0.75 + 0.5)*hw << "\" "
-                   "y=\"" << 0.5*hh*((c+lowfirstcol)%2) << "\" "
-                   "xlink:href=\"#cross\" />\n";
-         }
-         out << "</g>\n";
-         break;
-
-      case Dot:
-         out << "<g id=\"c-row\">\n";
-         for (int c = 0; c < cols; ++c) {
-            out << "<circle cx=\"" << (c*0.75 + 0.5)*hw
-                << "\" cy=\"" << 0.5*hh*((c+lowfirstcol)%2)
-                << "\" r=\"" << center_size << "\" />\n";
-         }
-         out << "</g>\n";
-         break;
-      default:
-         break;
-      }
-   }
+   svg_define_centers(out);
 
    // grid definition
    if (lowfirstcol == true) {
