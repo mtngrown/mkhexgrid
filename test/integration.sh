@@ -20,7 +20,7 @@ function test_svg() {
 }
 
 
-control="./control/control_1x1.svg"
+control="./fixtures/1x1.svg"
 output="./output/output_1x1.svg"
 test_svg $control $output
 
