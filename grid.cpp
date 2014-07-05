@@ -81,6 +81,12 @@ Grid::Grid(const map<string, string> &opt)
    else if (i->second == "o") lowfirstcol = false;
    else throw runtime_error("unrecognized grid start `" + i->second + "'");
 
+   i = opt.find("grid-sandwich");
+   if (i == opt.end())        lowfirstcol = false;
+   else if (i->second == "t") lowfirstcol = true;
+   else if (i->second == "f") lowfirstcol = false;
+   else throw runtime_error("unrecognized grid start `" + i->second + "'");
+
    i = opt.find("grid-thickness");
    if (i == opt.end()) grid_thickness = 1;
    else parse_length("grid thickness", i->second, grid_thickness);

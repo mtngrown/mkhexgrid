@@ -1,0 +1,83 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="576" height="663.917" version="1.1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<path id="cross" d="M 0 0 m -3 0 h 6 M 0 0 m 0 -3 v 6" />
+<g id="c-row">
+<use x="50" y="43.3013" xlink:href="#cross" />
+<use x="125" y="0" xlink:href="#cross" />
+<use x="200" y="43.3013" xlink:href="#cross" />
+<use x="275" y="0" xlink:href="#cross" />
+<use x="350" y="43.3013" xlink:href="#cross" />
+<use x="425" y="0" xlink:href="#cross" />
+</g>
+<path id="bottoms" d="M 0 0 l 25 43.3013 m 50 0 l 25 -43.3013 m 50 0 l 25 43.3013 m 50 0 l 25 -43.3013 m 50 0 l 25 43.3013 m 50 0" />
+<path id="tops" d="M 0 0 l 50 0 25 -43.3013 50 0 25 43.3013 50 0 25 -43.3013 50 0 25 43.3013 50 0 25 -43.3013 50 0" />
+<path id="outline" d="M 0 0 l 50 0 25 -43.3013 50 0 25 43.3013 50 0 25 -43.3013 50 0 25 43.3013 50 0 25 -43.3013 50 0 25 43.3013 -25 43.3013 25 43.3013 -25 43.3013 25 43.3013 -25 43.3013 25 43.3013 -25 43.3013 25 43.3013 -25 43.3013 25 43.3013 -25 43.3013 -50 0 -25 43.3013 -50 0 -25 -43.3013 -50 0 -25 43.3013 -50 0 -25 -43.3013 -50 0 -25 43.3013 -50 0 -25 -43.3013 25 -43.3013 -25 -43.3013 25 -43.3013 -25 -43.3013 25 -43.3013 -25 -43.3013 25 -43.3013 -25 -43.3013 25 -43.3013 -25 -43.3013 z" />
+</defs>
+<g transform="translate(50.5,50.5)">
+<g id="grid" style="fill: none; stroke: #808080; stroke-opacity: 1; stroke-width: 1; ">
+<use x="25" y="43.3013" xlink:href="#outline" />
+<use x="75" y="43.3013" xlink:href="#bottoms" />
+<use x="25" y="129.904" xlink:href="#tops" />
+<use x="75" y="129.904" xlink:href="#bottoms" />
+<use x="25" y="216.506" xlink:href="#tops" />
+<use x="75" y="216.506" xlink:href="#bottoms" />
+<use x="25" y="303.109" xlink:href="#tops" />
+<use x="75" y="303.109" xlink:href="#bottoms" />
+<use x="25" y="389.711" xlink:href="#tops" />
+<use x="75" y="389.711" xlink:href="#bottoms" />
+<use x="25" y="476.314" xlink:href="#tops" />
+<use x="75" y="476.314" xlink:href="#bottoms" />
+</g>
+<g id="centers" style="stroke: #808080; stroke-opacity: 1; ">
+<use x="0" y="43.3013" xlink:href="#c-row" />
+<use x="0" y="129.904" xlink:href="#c-row" />
+<use x="0" y="216.506" xlink:href="#c-row" />
+<use x="0" y="303.109" xlink:href="#c-row" />
+<use x="0" y="389.711" xlink:href="#c-row" />
+<use x="0" y="476.314" xlink:href="#c-row" />
+</g>
+<g id="coordinates" style="fill: #808080; fill-opacity: 1; font-family: sans; font-size: 10px; text-anchor: middle; ">
+<text x="50" y="86.6025">0601</text>
+<text x="125" y="43.3013">0501</text>
+<text x="200" y="86.6025">0401</text>
+<text x="275" y="43.3013">0301</text>
+<text x="350" y="86.6025">0201</text>
+<text x="425" y="43.3013">0101</text>
+<text x="50" y="173.205">0602</text>
+<text x="125" y="129.904">0502</text>
+<text x="200" y="173.205">0402</text>
+<text x="275" y="129.904">0302</text>
+<text x="350" y="173.205">0202</text>
+<text x="425" y="129.904">0102</text>
+<text x="50" y="259.808">0603</text>
+<text x="125" y="216.506">0503</text>
+<text x="200" y="259.808">0403</text>
+<text x="275" y="216.506">0303</text>
+<text x="350" y="259.808">0203</text>
+<text x="425" y="216.506">0103</text>
+<text x="50" y="346.41">0604</text>
+<text x="125" y="303.109">0504</text>
+<text x="200" y="346.41">0404</text>
+<text x="275" y="303.109">0304</text>
+<text x="350" y="346.41">0204</text>
+<text x="425" y="303.109">0104</text>
+<text x="50" y="433.013">0605</text>
+<text x="125" y="389.711">0505</text>
+<text x="200" y="433.013">0405</text>
+<text x="275" y="389.711">0305</text>
+<text x="350" y="433.013">0205</text>
+<text x="425" y="389.711">0105</text>
+<text x="50" y="519.615">0606</text>
+<text x="125" y="476.314">0506</text>
+<text x="200" y="519.615">0406</text>
+<text x="275" y="476.314">0306</text>
+<text x="350" y="519.615">0206</text>
+<text x="425" y="476.314">0106</text>
+</g>
+</g>
+</svg>

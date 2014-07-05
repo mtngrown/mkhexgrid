@@ -57,6 +57,7 @@ class Grid {
       void svg_draw_coordinates(ofstream & out);
       void svg_define_grid(ofstream & out);
       void svg_draw_background(ofstream & out);
+      void make_sandwich_defs(ofstream & out);
 
       // parse functions
       void parse_length(const char *o, const string &str, double &d);

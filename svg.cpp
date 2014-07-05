@@ -176,10 +176,8 @@ void Grid::svg_define_centers(ofstream & out) {
   }
 }
 
+void Grid::make_sandwich_defs(ofstream & out) {
 
-void Grid::svg_define_grid(ofstream & out) {
-
-   // grid definition
    if (lowfirstcol == true) {
       out << "<path id=\"bottoms\" d=\"M 0 0";
       for (int n = 0; n <= 2*cols-3; ++n) side_skip_path_svg(n);
@@ -220,6 +218,58 @@ void Grid::svg_define_grid(ofstream & out) {
          edge_path_reverse_svg(n);
       out << " z\" />\n";
    }
+}
+
+void Grid::svg_define_grid(ofstream & out) {
+
+  if (sandwich == true) {
+    make_sandwich_defs(out);
+    return;
+  }
+
+// grid definition
+  if (lowfirstcol == true) {
+    out << "<path id=\"bottoms\" d=\"M 0 0";
+    for (int n = 0; n <= 2*cols-3; ++n) side_skip_path_svg(n);
+    out << "\" />\n";
+
+    out << "<path id=\"tops\" d=\"M 0 0 l";
+    for (int n = 1; n <= 2*cols - 1; ++n) side_path_svg(n);
+    out << "\" />\n";
+
+    out << "<path id=\"outline\" d=\"M 0 0 l";
+    for (int n = 1; n <= 2*cols-cols%2; ++n)
+       side_path_svg(n);
+    for (int n = cols%2; n <= 2*rows-2+cols%2; ++n)
+       edge_path_svg(n);
+    for (int n = 3+(cols%2); n <= 2*cols+1+2*(cols%2); ++n)
+       side_path_reverse_svg(n);
+    for (int n = 0; n <= 2*rows-2; ++n)
+       edge_path_reverse_svg(n);
+    out << " z\" />\n";
+
+  } else {
+    out << "<path id=\"bottoms\" d=\"M 0 0";
+    for (int n = 2; n <= 2*cols-1; ++n) side_skip_path_svg(n);
+    out << "\" />\n";
+
+    out << "<path id=\"tops\" d=\"M 0 0 l";
+    for (int n = 3; n <= 2*cols + 1; ++n) side_path_svg(n);
+    out << "\" />\n";
+
+    //*
+    out << "<path id=\"outline\" d=\"M 0 0 l";
+    for (int n = 2; n <= 2*cols+2-(cols+1)%2; ++n)
+      side_path_svg(n);
+    for (int n = 1-cols%2; n <= 2*rows-1-cols%2; ++n)
+      edge_path_svg(n);
+    for (int n = 3*(cols%2); n <= 2*cols-1+2*(cols%2); ++n)
+      side_path_reverse_svg(n);
+    for (int n = 0; n <= 2*rows-3; ++n)
+      edge_path_reverse_svg(n);
+    out << " z\" />\n";
+    //*/
+  }
 }
 
 
