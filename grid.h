@@ -17,8 +17,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
  */
 
-#ifndef __GRID_H_
-#define __GRID_H_
+#ifndef _HEXGRID_GRID_H_
+#define _HEXGRID_GRID_H_
 
 #include <map>
 #include <string>
@@ -140,4 +140,4 @@ class Grid {
       static const double rad;    // radians per degree
 };
 
-#endif /* __GRID_H_ */
+#endif /* _HEXGRID_GRID_H_ */
