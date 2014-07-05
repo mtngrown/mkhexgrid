@@ -31,6 +31,19 @@ using namespace std;
 
 ofstream out;
 
+void Grid::svg_write_header(ofstream & out) {
+
+  out << "<?xml version=\"1.0\" standalone=\"no\"?>\n"
+         "<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\"\n"
+         "   \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">\n"
+         "<svg width=\"" << iw
+      << "\" height=\"" << ih
+      << "\" version=\"1.1\"\n"
+         "   xmlns=\"http://www.w3.org/2000/svg\"\n"
+         "   xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n";
+}
+
+
 void Grid::draw_svg()
 {
    if (outfile.empty() || outfile == "-") {
@@ -42,15 +55,7 @@ void Grid::draw_svg()
       if (!out) throw runtime_error("cannot write to " + outfile);
    }
 
-   // write header
-   out << "<?xml version=\"1.0\" standalone=\"no\"?>\n"
-          "<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\"\n"
-          "   \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">\n"
-          "<svg width=\"" << iw
-       << "\" height=\"" << ih
-       << "\" version=\"1.1\"\n"
-          "   xmlns=\"http://www.w3.org/2000/svg\"\n"
-          "   xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n";
+   svg_write_header(out);
 
    // write definitions for repeated elements
    out << "<defs>\n";

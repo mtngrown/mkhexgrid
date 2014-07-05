@@ -52,6 +52,7 @@ class Grid {
       void side_skip_path_svg(int n);
       void edge_path_svg(int n);
       void edge_path_reverse_svg(int n);
+      void svg_write_header(ofstream & out);
 
       // parse functions
       void parse_length(const char *o, const string &str, double &d);
