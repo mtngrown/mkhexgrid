@@ -11,6 +11,8 @@ source ./svg_1x1.sh
 
 function test_svg() {
 
+
+
   results=`diff $1 $2`
   if [[ $results ]] ; then
     echo $redf"failed $1: diff results in $results"
@@ -21,7 +23,15 @@ function test_svg() {
 
 
 control="./fixtures/1x1.svg"
-output="./output/output_1x1.svg"
+output="./output/1x1.svg"
+test_svg $control $output
+
+control="./fixtures/6x6_center_cross.svg"
+output="./output/6x6_center_cross.svg"
+test_svg $control $output
+
+control="./fixtures/8x8_center_dot.svg"
+output="./output/8x8_center_dot.svg"
 test_svg $control $output
 
 echo

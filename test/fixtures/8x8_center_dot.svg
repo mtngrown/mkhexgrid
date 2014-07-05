@@ -1,0 +1,118 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="951" height="822.688" version="1.1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<g id="c-row">
+<circle cx="57.735" cy="0" r="3" />
+<circle cx="144.338" cy="50" r="3" />
+<circle cx="230.94" cy="0" r="3" />
+<circle cx="317.543" cy="50" r="3" />
+<circle cx="404.145" cy="0" r="3" />
+<circle cx="490.748" cy="50" r="3" />
+<circle cx="577.35" cy="0" r="3" />
+<circle cx="663.953" cy="50" r="3" />
+</g>
+<path id="bottoms" d="M 0 0 l 28.8675 -50 m 57.735 0 l 28.8675 50 m 57.735 0 l 28.8675 -50 m 57.735 0 l 28.8675 50 m 57.735 0 l 28.8675 -50 m 57.735 0 l 28.8675 50 m 57.735 0 l 28.8675 -50 m 57.735 0" />
+<path id="tops" d="M 0 0 l 57.735 0 28.8675 50 57.735 0 28.8675 -50 57.735 0 28.8675 50 57.735 0 28.8675 -50 57.735 0 28.8675 50 57.735 0 28.8675 -50 57.735 0 28.8675 50 57.735 0" />
+<path id="outline" d="M 0 0 l 28.8675 -50 57.735 0 28.8675 50 57.735 0 28.8675 -50 57.735 0 28.8675 50 57.735 0 28.8675 -50 57.735 0 28.8675 50 57.735 0 28.8675 -50 57.735 0 28.8675 50 57.735 0 28.8675 50 -28.8675 50 28.8675 50 -28.8675 50 28.8675 50 -28.8675 50 28.8675 50 -28.8675 50 28.8675 50 -28.8675 50 28.8675 50 -28.8675 50 28.8675 50 -28.8675 50 28.8675 50 -28.8675 50 -57.735 0 -28.8675 -50 -57.735 0 -28.8675 50 -57.735 0 -28.8675 -50 -57.735 0 -28.8675 50 -57.735 0 -28.8675 -50 -57.735 0 -28.8675 50 -57.735 0 -28.8675 -50 -57.735 0 -28.8675 -50 28.8675 -50 -28.8675 -50 28.8675 -50 -28.8675 -50 28.8675 -50 -28.8675 -50 28.8675 -50 -28.8675 -50 28.8675 -50 -28.8675 -50 28.8675 -50 -28.8675 -50 28.8675 -50 z" />
+</defs>
+<g transform="translate(901,50.5) rotate(90)">
+<g id="grid" style="fill: none; stroke: #808080; stroke-opacity: 1; stroke-width: 1; ">
+<use x="0" y="50" xlink:href="#outline" />
+<use x="86.6025" y="100" xlink:href="#bottoms" />
+<use x="28.8675" y="100" xlink:href="#tops" />
+<use x="86.6025" y="200" xlink:href="#bottoms" />
+<use x="28.8675" y="200" xlink:href="#tops" />
+<use x="86.6025" y="300" xlink:href="#bottoms" />
+<use x="28.8675" y="300" xlink:href="#tops" />
+<use x="86.6025" y="400" xlink:href="#bottoms" />
+<use x="28.8675" y="400" xlink:href="#tops" />
+<use x="86.6025" y="500" xlink:href="#bottoms" />
+<use x="28.8675" y="500" xlink:href="#tops" />
+<use x="86.6025" y="600" xlink:href="#bottoms" />
+<use x="28.8675" y="600" xlink:href="#tops" />
+<use x="86.6025" y="700" xlink:href="#bottoms" />
+<use x="28.8675" y="700" xlink:href="#tops" />
+<use x="86.6025" y="800" xlink:href="#bottoms" />
+</g>
+<g id="centers" style="fill: #808080; fill-opacity: 1; ">
+<use x="0" y="50" xlink:href="#c-row" />
+<use x="0" y="150" xlink:href="#c-row" />
+<use x="0" y="250" xlink:href="#c-row" />
+<use x="0" y="350" xlink:href="#c-row" />
+<use x="0" y="450" xlink:href="#c-row" />
+<use x="0" y="550" xlink:href="#c-row" />
+<use x="0" y="650" xlink:href="#c-row" />
+<use x="0" y="750" xlink:href="#c-row" />
+</g>
+<g id="coordinates" style="fill: #808080; fill-opacity: 1; font-family: sans; font-size: 8px; text-anchor: middle; ">
+<text x="57.735" y="50" transform="rotate(-90 57.735 50)">0101</text>
+<text x="144.338" y="100" transform="rotate(-90 144.338 100)">0201</text>
+<text x="230.94" y="50" transform="rotate(-90 230.94 50)">0301</text>
+<text x="317.543" y="100" transform="rotate(-90 317.543 100)">0401</text>
+<text x="404.145" y="50" transform="rotate(-90 404.145 50)">0501</text>
+<text x="490.748" y="100" transform="rotate(-90 490.748 100)">0601</text>
+<text x="577.35" y="50" transform="rotate(-90 577.35 50)">0701</text>
+<text x="663.953" y="100" transform="rotate(-90 663.953 100)">0801</text>
+<text x="57.735" y="150" transform="rotate(-90 57.735 150)">0102</text>
+<text x="144.338" y="200" transform="rotate(-90 144.338 200)">0202</text>
+<text x="230.94" y="150" transform="rotate(-90 230.94 150)">0302</text>
+<text x="317.543" y="200" transform="rotate(-90 317.543 200)">0402</text>
+<text x="404.145" y="150" transform="rotate(-90 404.145 150)">0502</text>
+<text x="490.748" y="200" transform="rotate(-90 490.748 200)">0602</text>
+<text x="577.35" y="150" transform="rotate(-90 577.35 150)">0702</text>
+<text x="663.953" y="200" transform="rotate(-90 663.953 200)">0802</text>
+<text x="57.735" y="250" transform="rotate(-90 57.735 250)">0103</text>
+<text x="144.338" y="300" transform="rotate(-90 144.338 300)">0203</text>
+<text x="230.94" y="250" transform="rotate(-90 230.94 250)">0303</text>
+<text x="317.543" y="300" transform="rotate(-90 317.543 300)">0403</text>
+<text x="404.145" y="250" transform="rotate(-90 404.145 250)">0503</text>
+<text x="490.748" y="300" transform="rotate(-90 490.748 300)">0603</text>
+<text x="577.35" y="250" transform="rotate(-90 577.35 250)">0703</text>
+<text x="663.953" y="300" transform="rotate(-90 663.953 300)">0803</text>
+<text x="57.735" y="350" transform="rotate(-90 57.735 350)">0104</text>
+<text x="144.338" y="400" transform="rotate(-90 144.338 400)">0204</text>
+<text x="230.94" y="350" transform="rotate(-90 230.94 350)">0304</text>
+<text x="317.543" y="400" transform="rotate(-90 317.543 400)">0404</text>
+<text x="404.145" y="350" transform="rotate(-90 404.145 350)">0504</text>
+<text x="490.748" y="400" transform="rotate(-90 490.748 400)">0604</text>
+<text x="577.35" y="350" transform="rotate(-90 577.35 350)">0704</text>
+<text x="663.953" y="400" transform="rotate(-90 663.953 400)">0804</text>
+<text x="57.735" y="450" transform="rotate(-90 57.735 450)">0105</text>
+<text x="144.338" y="500" transform="rotate(-90 144.338 500)">0205</text>
+<text x="230.94" y="450" transform="rotate(-90 230.94 450)">0305</text>
+<text x="317.543" y="500" transform="rotate(-90 317.543 500)">0405</text>
+<text x="404.145" y="450" transform="rotate(-90 404.145 450)">0505</text>
+<text x="490.748" y="500" transform="rotate(-90 490.748 500)">0605</text>
+<text x="577.35" y="450" transform="rotate(-90 577.35 450)">0705</text>
+<text x="663.953" y="500" transform="rotate(-90 663.953 500)">0805</text>
+<text x="57.735" y="550" transform="rotate(-90 57.735 550)">0106</text>
+<text x="144.338" y="600" transform="rotate(-90 144.338 600)">0206</text>
+<text x="230.94" y="550" transform="rotate(-90 230.94 550)">0306</text>
+<text x="317.543" y="600" transform="rotate(-90 317.543 600)">0406</text>
+<text x="404.145" y="550" transform="rotate(-90 404.145 550)">0506</text>
+<text x="490.748" y="600" transform="rotate(-90 490.748 600)">0606</text>
+<text x="577.35" y="550" transform="rotate(-90 577.35 550)">0706</text>
+<text x="663.953" y="600" transform="rotate(-90 663.953 600)">0806</text>
+<text x="57.735" y="650" transform="rotate(-90 57.735 650)">0107</text>
+<text x="144.338" y="700" transform="rotate(-90 144.338 700)">0207</text>
+<text x="230.94" y="650" transform="rotate(-90 230.94 650)">0307</text>
+<text x="317.543" y="700" transform="rotate(-90 317.543 700)">0407</text>
+<text x="404.145" y="650" transform="rotate(-90 404.145 650)">0507</text>
+<text x="490.748" y="700" transform="rotate(-90 490.748 700)">0607</text>
+<text x="577.35" y="650" transform="rotate(-90 577.35 650)">0707</text>
+<text x="663.953" y="700" transform="rotate(-90 663.953 700)">0807</text>
+<text x="57.735" y="750" transform="rotate(-90 57.735 750)">0108</text>
+<text x="144.338" y="800" transform="rotate(-90 144.338 800)">0208</text>
+<text x="230.94" y="750" transform="rotate(-90 230.94 750)">0308</text>
+<text x="317.543" y="800" transform="rotate(-90 317.543 800)">0408</text>
+<text x="404.145" y="750" transform="rotate(-90 404.145 750)">0508</text>
+<text x="490.748" y="800" transform="rotate(-90 490.748 800)">0608</text>
+<text x="577.35" y="750" transform="rotate(-90 577.35 750)">0708</text>
+<text x="663.953" y="800" transform="rotate(-90 663.953 800)">0808</text>
+</g>
+</g>
+</svg>
