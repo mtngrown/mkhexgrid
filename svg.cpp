@@ -223,6 +223,25 @@ void Grid::svg_define_grid(ofstream & out) {
 }
 
 
+void Grid::svg_draw_background(ofstream & out) {
+
+   // draw background
+   if (!bg_color.empty()) {
+      out << "<rect id=\"background\" "
+             "x=\""      << (matte ? mleft-grid_thickness/2 : 0) << "\" "
+             "y=\""      << (matte ? mtop-grid_thickness/2  : 0) << "\" "
+             "width=\""  << (matte ?
+                              iw-mleft-mright+grid_thickness : iw) << "\" "
+             "height=\"" << (matte ?
+                              ih-mtop-mbottom+grid_thickness : ih) << "\" "
+             "style=\""
+             "fill: #"        << bg_color   << "; "
+             "fill-opacity: " << bg_opacity << "; "
+             "stroke: none;\" />\n";
+   }
+}
+
+
 void Grid::draw_svg()
 {
    if (outfile.empty() || outfile == "-") {
@@ -242,20 +261,7 @@ void Grid::draw_svg()
    svg_define_grid(out);
    out << "</defs>\n";
 
-   // draw background
-   if (!bg_color.empty()) {
-      out << "<rect id=\"background\" "
-             "x=\""      << (matte ? mleft-grid_thickness/2 : 0) << "\" "
-             "y=\""      << (matte ? mtop-grid_thickness/2  : 0) << "\" "
-             "width=\""  << (matte ?
-                              iw-mleft-mright+grid_thickness : iw) << "\" "
-             "height=\"" << (matte ?
-                              ih-mtop-mbottom+grid_thickness : ih) << "\" "
-             "style=\""
-             "fill: #"        << bg_color   << "; "
-             "fill-opacity: " << bg_opacity << "; "
-             "stroke: none;\" />\n";
-   }
+   svg_draw_background(out);
 
    out << "<g transform=\"translate(";
    if (grain == Horizontal) {
