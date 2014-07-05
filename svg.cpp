@@ -33,8 +33,9 @@ ofstream out;
 
 void Grid::draw_svg()
 {
-   if (outfile.empty() || outfile == "-") out.ostream::rdbuf(cout.rdbuf());
-   else {
+   if (outfile.empty() || outfile == "-") {
+     out.ostream::rdbuf(cout.rdbuf());
+   } else {
       filebuf *buf = new filebuf;
       buf->open(outfile.c_str(), ios::out | ios::binary);
       out.ostream::rdbuf(buf);
@@ -73,6 +74,7 @@ void Grid::draw_svg()
          }
          out << "</g>\n";
          break;
+
       case Dot:
          out << "<g id=\"c-row\">\n";
          for (int c = 0; c < cols; ++c) {
@@ -107,8 +109,8 @@ void Grid::draw_svg()
       for (int n = 0; n <= 2*rows-2; ++n)
          edge_path_reverse_svg(n);
       out << " z\" />\n";
-   }
-   else {
+
+   } else {
       out << "<path id=\"bottoms\" d=\"M 0 0";
       for (int n = 2; n <= 2*cols-1; ++n) side_skip_path_svg(n);
       out << "\" />\n";
