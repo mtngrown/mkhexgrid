@@ -43,6 +43,101 @@ void Grid::svg_write_header(ofstream & out) {
          "   xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n";
 }
 
+void Grid::svg_draw_coordinates(ofstream & out) {
+
+  // draw coordinates
+  out << "<g id=\"coordinates\" "
+         "style=\""
+         "fill: #" << coord_color << "; "
+         "fill-opacity: " << coord_opacity << "; "
+         "font-family: " << coord_font << "; "
+         "font-size: " << coord_size << "px; "
+         "text-anchor: middle; "
+         "\">\n";
+  // NB: CSS requires that font-size have some unit
+
+  double bcos = cos(coord_bearing*rad),
+         bsin = sin(coord_bearing*rad);
+
+  for (int r = 0; r < rows; ++r) {
+     if ((r+coord_rstart) % coord_rskip) continue;
+     for (int c = 0; c < cols; ++c) {
+        if ((c+coord_cstart) % coord_cskip) continue;
+
+        int cc = 0, cr = 0;
+
+        switch (coord_origin) {
+        case UpperLeft:
+           cc = c+coord_cstart;
+           cr = r+coord_rstart;
+           break;
+        case UpperRight:
+           cc = cols-c-1+coord_cstart;
+           cr = r+coord_rstart;
+           break;
+        case LowerLeft:
+           cc = c+coord_cstart;
+           cr = rows-r-1+coord_rstart;
+           break;
+        case LowerRight:
+           cc = cols-c-1+coord_cstart;
+           cr = rows-r-1+coord_rstart;
+           break;
+        }
+
+        int a = cc, b = cr;
+        if (coord_order == RowsFirst) swap(a, b);
+
+        ostringstream s;
+        s << coord_fmt_pre;
+
+        switch (coord_first_style) {
+        case NoCoord:
+           break;
+        case Number:
+           if (coord_first_width) s << setw(coord_first_width);
+           if (coord_first_fill) s << setfill('0');
+           s << a;
+           break;
+        case Alpha:
+           s << alpha(a);
+           break;
+        case AlphaTally:
+           s << alpha_tally(a);
+           break;
+        }
+
+        s << coord_fmt_inter;
+
+        switch (coord_second_style) {
+        case NoCoord:
+           break;
+        case Number:
+           if (coord_second_width) s << setw(coord_second_width);
+           if (coord_second_fill) s << setfill('0');
+           s << b;
+           break;
+        case Alpha:
+           s << alpha(b);
+           break;
+        case AlphaTally:
+           s << alpha_tally(b);
+           break;
+        }
+
+        double x = (c*0.75 + 0.5)*hw+coord_dist*bcos;
+        double y = (r + 0.5*(1 + (c+lowfirstcol)%2))*hh+coord_dist*bsin;
+
+        out << "<text x=\"" << x
+            << "\" y=\"" << y << "\"";
+        if (coord_tilt)
+           out << " transform=\"rotate(" << coord_tilt
+               << ' ' << x << ' ' << y << ")\"";
+        out << '>' << s.str() << "</text>\n";
+     }
+  }
+  out << "</g>\n";
+}
 
 void Grid::svg_define_centers(ofstream & out) {
 
@@ -260,98 +355,7 @@ void Grid::draw_svg()
    }
 
    if (coord_display) {
-      // draw coordinates
-      out << "<g id=\"coordinates\" "
-             "style=\""
-             "fill: #" << coord_color << "; "
-             "fill-opacity: " << coord_opacity << "; "
-             "font-family: " << coord_font << "; "
-             "font-size: " << coord_size << "px; "
-             "text-anchor: middle; "
-             "\">\n";
-      // NB: CSS requires that font-size have some unit
-
-      double bcos = cos(coord_bearing*rad),
-             bsin = sin(coord_bearing*rad);
-
-      for (int r = 0; r < rows; ++r) {
-         if ((r+coord_rstart) % coord_rskip) continue;
-         for (int c = 0; c < cols; ++c) {
-            if ((c+coord_cstart) % coord_cskip) continue;
-
-            int cc = 0, cr = 0;
-
-            switch (coord_origin) {
-            case UpperLeft:
-               cc = c+coord_cstart;
-               cr = r+coord_rstart;
-               break;
-            case UpperRight:
-               cc = cols-c-1+coord_cstart;
-               cr = r+coord_rstart;
-               break;
-            case LowerLeft:
-               cc = c+coord_cstart;
-               cr = rows-r-1+coord_rstart;
-               break;
-            case LowerRight:
-               cc = cols-c-1+coord_cstart;
-               cr = rows-r-1+coord_rstart;
-               break;
-            }
-
-            int a = cc, b = cr;
-            if (coord_order == RowsFirst) swap(a, b);
-
-            ostringstream s;
-            s << coord_fmt_pre;
-
-            switch (coord_first_style) {
-            case NoCoord:
-               break;
-            case Number:
-               if (coord_first_width) s << setw(coord_first_width);
-               if (coord_first_fill) s << setfill('0');
-               s << a;
-               break;
-            case Alpha:
-               s << alpha(a);
-               break;
-            case AlphaTally:
-               s << alpha_tally(a);
-               break;
-            }
-
-            s << coord_fmt_inter;
-
-            switch (coord_second_style) {
-            case NoCoord:
-               break;
-            case Number:
-               if (coord_second_width) s << setw(coord_second_width);
-               if (coord_second_fill) s << setfill('0');
-               s << b;
-               break;
-            case Alpha:
-               s << alpha(b);
-               break;
-            case AlphaTally:
-               s << alpha_tally(b);
-               break;
-            }
-
-            double x = (c*0.75 + 0.5)*hw+coord_dist*bcos;
-            double y = (r + 0.5*(1 + (c+lowfirstcol)%2))*hh+coord_dist*bsin;
-
-            out << "<text x=\"" << x
-                << "\" y=\"" << y << "\"";
-            if (coord_tilt)
-               out << " transform=\"rotate(" << coord_tilt
-                   << ' ' << x << ' ' << y << ")\"";
-            out << '>' << s.str() << "</text>\n";
-         }
-      }
-      out << "</g>\n";
+     svg_draw_coordinates(out);
    }
 
    out << "</g>\n";
