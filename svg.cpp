@@ -177,23 +177,7 @@ void Grid::svg_define_centers(ofstream & out) {
 }
 
 
-void Grid::draw_svg()
-{
-   if (outfile.empty() || outfile == "-") {
-     out.ostream::rdbuf(cout.rdbuf());
-   } else {
-      filebuf *buf = new filebuf;
-      buf->open(outfile.c_str(), ios::out | ios::binary);
-      out.ostream::rdbuf(buf);
-      if (!out) throw runtime_error("cannot write to " + outfile);
-   }
-
-   svg_write_header(out);
-
-   // write definitions for repeated elements
-   out << "<defs>\n";
-
-   svg_define_centers(out);
+void Grid::svg_define_grid(ofstream & out) {
 
    // grid definition
    if (lowfirstcol == true) {
@@ -236,7 +220,26 @@ void Grid::draw_svg()
          edge_path_reverse_svg(n);
       out << " z\" />\n";
    }
+}
 
+
+void Grid::draw_svg()
+{
+   if (outfile.empty() || outfile == "-") {
+     out.ostream::rdbuf(cout.rdbuf());
+   } else {
+      filebuf *buf = new filebuf;
+      buf->open(outfile.c_str(), ios::out | ios::binary);
+      out.ostream::rdbuf(buf);
+      if (!out) throw runtime_error("cannot write to " + outfile);
+   }
+
+   svg_write_header(out);
+
+   // write definitions for repeated elements
+   out << "<defs>\n";
+   svg_define_centers(out);
+   svg_define_grid(out);
    out << "</defs>\n";
 
    // draw background
