@@ -7,7 +7,7 @@ echo
 echo $cyanf"# Integration testing for mkhexgrid"
 echo
 
-source ./svg_1x1.sh
+source ./svg.sh
 
 function test_svg() {
 
