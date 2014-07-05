@@ -1,0 +1,564 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="2751" height="1775.32" version="1.1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<path id="bottoms" d="M 0 0 l 28.8675 -50 m 57.735 0 l 28.8675 50 m 57.735 0 l 28.8675 -50 m 57.735 0 l 28.8675 50 m 57.735 0 l 28.8675 -50 m 57.735 0 l 28.8675 50 m 57.735 0 l 28.8675 -50 m 57.735 0 l 28.8675 50 m 57.735 0 l 28.8675 -50 m 57.735 0 l 28.8675 50 m 57.735 0 l 28.8675 -50 m 57.735 0 l 28.8675 50 m 57.735 0 l 28.8675 -50 m 57.735 0 l 28.8675 50 m 57.735 0 l 28.8675 -50 m 57.735 0 l 28.8675 50 m 57.735 0 l 28.8675 -50 m 57.735 0 l 28.8675 50 m 57.735 0" />
+<path id="tops" d="M 0 0 l 57.735 0 28.8675 50 57.735 0 28.8675 -50 57.735 0 28.8675 50 57.735 0 28.8675 -50 57.735 0 28.8675 50 57.735 0 28.8675 -50 57.735 0 28.8675 50 57.735 0 28.8675 -50 57.735 0 28.8675 50 57.735 0 28.8675 -50 57.735 0 28.8675 50 57.735 0 28.8675 -50 57.735 0 28.8675 50 57.735 0 28.8675 -50 57.735 0 28.8675 50 57.735 0 28.8675 -50 57.735 0 28.8675 50 57.735 0 28.8675 -50 57.735 0" />
+<path id="outline" d="M 0 0 l 28.8675 -50 57.735 0 28.8675 50 57.735 0 28.8675 -50 57.735 0 28.8675 50 57.735 0 28.8675 -50 57.735 0 28.8675 50 57.735 0 28.8675 -50 57.735 0 28.8675 50 57.735 0 28.8675 -50 57.735 0 28.8675 50 57.735 0 28.8675 -50 57.735 0 28.8675 50 57.735 0 28.8675 -50 57.735 0 28.8675 50 57.735 0 28.8675 -50 57.735 0 28.8675 50 57.735 0 28.8675 -50 57.735 0 28.8675 50 57.735 0 28.8675 -50 57.735 0 28.8675 50 -28.8675 50 28.8675 50 -28.8675 50 28.8675 50 -28.8675 50 28.8675 50 -28.8675 50 28.8675 50 -28.8675 50 28.8675 50 -28.8675 50 28.8675 50 -28.8675 50 28.8675 50 -28.8675 50 28.8675 50 -28.8675 50 28.8675 50 -28.8675 50 28.8675 50 -28.8675 50 28.8675 50 -28.8675 50 28.8675 50 -28.8675 50 28.8675 50 -28.8675 50 28.8675 50 -28.8675 50 28.8675 50 -28.8675 50 28.8675 50 -28.8675 50 28.8675 50 -28.8675 50 28.8675 50 -28.8675 50 28.8675 50 -28.8675 50 28.8675 50 -28.8675 50 28.8675 50 -28.8675 50 28.8675 50 -28.8675 50 28.8675 50 -28.8675 50 28.8675 50 -28.8675 50 28.8675 50 -28.8675 50 -57.735 0 -28.8675 50 -57.735 0 -28.8675 -50 -57.735 0 -28.8675 50 -57.735 0 -28.8675 -50 -57.735 0 -28.8675 50 -57.735 0 -28.8675 -50 -57.735 0 -28.8675 50 -57.735 0 -28.8675 -50 -57.735 0 -28.8675 50 -57.735 0 -28.8675 -50 -57.735 0 -28.8675 50 -57.735 0 -28.8675 -50 -57.735 0 -28.8675 50 -57.735 0 -28.8675 -50 -57.735 0 -28.8675 50 -57.735 0 -28.8675 -50 -57.735 0 -28.8675 50 -57.735 0 -28.8675 -50 -57.735 0 -28.8675 -50 28.8675 -50 -28.8675 -50 28.8675 -50 -28.8675 -50 28.8675 -50 -28.8675 -50 28.8675 -50 -28.8675 -50 28.8675 -50 -28.8675 -50 28.8675 -50 -28.8675 -50 28.8675 -50 -28.8675 -50 28.8675 -50 -28.8675 -50 28.8675 -50 -28.8675 -50 28.8675 -50 -28.8675 -50 28.8675 -50 -28.8675 -50 28.8675 -50 -28.8675 -50 28.8675 -50 -28.8675 -50 28.8675 -50 -28.8675 -50 28.8675 -50 -28.8675 -50 28.8675 -50 -28.8675 -50 28.8675 -50 -28.8675 -50 28.8675 -50 -28.8675 -50 28.8675 -50 -28.8675 -50 28.8675 -50 -28.8675 -50 28.8675 -50 -28.8675 -50 28.8675 -50 -28.8675 -50 28.8675 -50 -28.8675 -50 28.8675 -50 -28.8675 -50 28.8675 -50 z" />
+</defs>
+<g transform="translate(2701,50.5) rotate(90)">
+<g id="grid" style="fill: none; stroke: #808080; stroke-opacity: 1; stroke-width: 1; ">
+<use x="0" y="50" xlink:href="#outline" />
+<use x="86.6025" y="100" xlink:href="#bottoms" />
+<use x="28.8675" y="100" xlink:href="#tops" />
+<use x="86.6025" y="200" xlink:href="#bottoms" />
+<use x="28.8675" y="200" xlink:href="#tops" />
+<use x="86.6025" y="300" xlink:href="#bottoms" />
+<use x="28.8675" y="300" xlink:href="#tops" />
+<use x="86.6025" y="400" xlink:href="#bottoms" />
+<use x="28.8675" y="400" xlink:href="#tops" />
+<use x="86.6025" y="500" xlink:href="#bottoms" />
+<use x="28.8675" y="500" xlink:href="#tops" />
+<use x="86.6025" y="600" xlink:href="#bottoms" />
+<use x="28.8675" y="600" xlink:href="#tops" />
+<use x="86.6025" y="700" xlink:href="#bottoms" />
+<use x="28.8675" y="700" xlink:href="#tops" />
+<use x="86.6025" y="800" xlink:href="#bottoms" />
+<use x="28.8675" y="800" xlink:href="#tops" />
+<use x="86.6025" y="900" xlink:href="#bottoms" />
+<use x="28.8675" y="900" xlink:href="#tops" />
+<use x="86.6025" y="1000" xlink:href="#bottoms" />
+<use x="28.8675" y="1000" xlink:href="#tops" />
+<use x="86.6025" y="1100" xlink:href="#bottoms" />
+<use x="28.8675" y="1100" xlink:href="#tops" />
+<use x="86.6025" y="1200" xlink:href="#bottoms" />
+<use x="28.8675" y="1200" xlink:href="#tops" />
+<use x="86.6025" y="1300" xlink:href="#bottoms" />
+<use x="28.8675" y="1300" xlink:href="#tops" />
+<use x="86.6025" y="1400" xlink:href="#bottoms" />
+<use x="28.8675" y="1400" xlink:href="#tops" />
+<use x="86.6025" y="1500" xlink:href="#bottoms" />
+<use x="28.8675" y="1500" xlink:href="#tops" />
+<use x="86.6025" y="1600" xlink:href="#bottoms" />
+<use x="28.8675" y="1600" xlink:href="#tops" />
+<use x="86.6025" y="1700" xlink:href="#bottoms" />
+<use x="28.8675" y="1700" xlink:href="#tops" />
+<use x="86.6025" y="1800" xlink:href="#bottoms" />
+<use x="28.8675" y="1800" xlink:href="#tops" />
+<use x="86.6025" y="1900" xlink:href="#bottoms" />
+<use x="28.8675" y="1900" xlink:href="#tops" />
+<use x="86.6025" y="2000" xlink:href="#bottoms" />
+<use x="28.8675" y="2000" xlink:href="#tops" />
+<use x="86.6025" y="2100" xlink:href="#bottoms" />
+<use x="28.8675" y="2100" xlink:href="#tops" />
+<use x="86.6025" y="2200" xlink:href="#bottoms" />
+<use x="28.8675" y="2200" xlink:href="#tops" />
+<use x="86.6025" y="2300" xlink:href="#bottoms" />
+<use x="28.8675" y="2300" xlink:href="#tops" />
+<use x="86.6025" y="2400" xlink:href="#bottoms" />
+<use x="28.8675" y="2400" xlink:href="#tops" />
+<use x="86.6025" y="2500" xlink:href="#bottoms" />
+<use x="28.8675" y="2500" xlink:href="#tops" />
+<use x="86.6025" y="2600" xlink:href="#bottoms" />
+</g>
+<g id="coordinates" style="fill: #808080; fill-opacity: 1; font-family: sans; font-size: 8px; text-anchor: middle; ">
+<text x="57.735" y="50" transform="rotate(-90 57.735 50)">0101</text>
+<text x="144.338" y="100" transform="rotate(-90 144.338 100)">0201</text>
+<text x="230.94" y="50" transform="rotate(-90 230.94 50)">0301</text>
+<text x="317.543" y="100" transform="rotate(-90 317.543 100)">0401</text>
+<text x="404.145" y="50" transform="rotate(-90 404.145 50)">0501</text>
+<text x="490.748" y="100" transform="rotate(-90 490.748 100)">0601</text>
+<text x="577.35" y="50" transform="rotate(-90 577.35 50)">0701</text>
+<text x="663.953" y="100" transform="rotate(-90 663.953 100)">0801</text>
+<text x="750.555" y="50" transform="rotate(-90 750.555 50)">0901</text>
+<text x="837.158" y="100" transform="rotate(-90 837.158 100)">1001</text>
+<text x="923.76" y="50" transform="rotate(-90 923.76 50)">1101</text>
+<text x="1010.36" y="100" transform="rotate(-90 1010.36 100)">1201</text>
+<text x="1096.97" y="50" transform="rotate(-90 1096.97 50)">1301</text>
+<text x="1183.57" y="100" transform="rotate(-90 1183.57 100)">1401</text>
+<text x="1270.17" y="50" transform="rotate(-90 1270.17 50)">1501</text>
+<text x="1356.77" y="100" transform="rotate(-90 1356.77 100)">1601</text>
+<text x="1443.38" y="50" transform="rotate(-90 1443.38 50)">1701</text>
+<text x="1529.98" y="100" transform="rotate(-90 1529.98 100)">1801</text>
+<text x="1616.58" y="50" transform="rotate(-90 1616.58 50)">1901</text>
+<text x="57.735" y="150" transform="rotate(-90 57.735 150)">0102</text>
+<text x="144.338" y="200" transform="rotate(-90 144.338 200)">0202</text>
+<text x="230.94" y="150" transform="rotate(-90 230.94 150)">0302</text>
+<text x="317.543" y="200" transform="rotate(-90 317.543 200)">0402</text>
+<text x="404.145" y="150" transform="rotate(-90 404.145 150)">0502</text>
+<text x="490.748" y="200" transform="rotate(-90 490.748 200)">0602</text>
+<text x="577.35" y="150" transform="rotate(-90 577.35 150)">0702</text>
+<text x="663.953" y="200" transform="rotate(-90 663.953 200)">0802</text>
+<text x="750.555" y="150" transform="rotate(-90 750.555 150)">0902</text>
+<text x="837.158" y="200" transform="rotate(-90 837.158 200)">1002</text>
+<text x="923.76" y="150" transform="rotate(-90 923.76 150)">1102</text>
+<text x="1010.36" y="200" transform="rotate(-90 1010.36 200)">1202</text>
+<text x="1096.97" y="150" transform="rotate(-90 1096.97 150)">1302</text>
+<text x="1183.57" y="200" transform="rotate(-90 1183.57 200)">1402</text>
+<text x="1270.17" y="150" transform="rotate(-90 1270.17 150)">1502</text>
+<text x="1356.77" y="200" transform="rotate(-90 1356.77 200)">1602</text>
+<text x="1443.38" y="150" transform="rotate(-90 1443.38 150)">1702</text>
+<text x="1529.98" y="200" transform="rotate(-90 1529.98 200)">1802</text>
+<text x="1616.58" y="150" transform="rotate(-90 1616.58 150)">1902</text>
+<text x="57.735" y="250" transform="rotate(-90 57.735 250)">0103</text>
+<text x="144.338" y="300" transform="rotate(-90 144.338 300)">0203</text>
+<text x="230.94" y="250" transform="rotate(-90 230.94 250)">0303</text>
+<text x="317.543" y="300" transform="rotate(-90 317.543 300)">0403</text>
+<text x="404.145" y="250" transform="rotate(-90 404.145 250)">0503</text>
+<text x="490.748" y="300" transform="rotate(-90 490.748 300)">0603</text>
+<text x="577.35" y="250" transform="rotate(-90 577.35 250)">0703</text>
+<text x="663.953" y="300" transform="rotate(-90 663.953 300)">0803</text>
+<text x="750.555" y="250" transform="rotate(-90 750.555 250)">0903</text>
+<text x="837.158" y="300" transform="rotate(-90 837.158 300)">1003</text>
+<text x="923.76" y="250" transform="rotate(-90 923.76 250)">1103</text>
+<text x="1010.36" y="300" transform="rotate(-90 1010.36 300)">1203</text>
+<text x="1096.97" y="250" transform="rotate(-90 1096.97 250)">1303</text>
+<text x="1183.57" y="300" transform="rotate(-90 1183.57 300)">1403</text>
+<text x="1270.17" y="250" transform="rotate(-90 1270.17 250)">1503</text>
+<text x="1356.77" y="300" transform="rotate(-90 1356.77 300)">1603</text>
+<text x="1443.38" y="250" transform="rotate(-90 1443.38 250)">1703</text>
+<text x="1529.98" y="300" transform="rotate(-90 1529.98 300)">1803</text>
+<text x="1616.58" y="250" transform="rotate(-90 1616.58 250)">1903</text>
+<text x="57.735" y="350" transform="rotate(-90 57.735 350)">0104</text>
+<text x="144.338" y="400" transform="rotate(-90 144.338 400)">0204</text>
+<text x="230.94" y="350" transform="rotate(-90 230.94 350)">0304</text>
+<text x="317.543" y="400" transform="rotate(-90 317.543 400)">0404</text>
+<text x="404.145" y="350" transform="rotate(-90 404.145 350)">0504</text>
+<text x="490.748" y="400" transform="rotate(-90 490.748 400)">0604</text>
+<text x="577.35" y="350" transform="rotate(-90 577.35 350)">0704</text>
+<text x="663.953" y="400" transform="rotate(-90 663.953 400)">0804</text>
+<text x="750.555" y="350" transform="rotate(-90 750.555 350)">0904</text>
+<text x="837.158" y="400" transform="rotate(-90 837.158 400)">1004</text>
+<text x="923.76" y="350" transform="rotate(-90 923.76 350)">1104</text>
+<text x="1010.36" y="400" transform="rotate(-90 1010.36 400)">1204</text>
+<text x="1096.97" y="350" transform="rotate(-90 1096.97 350)">1304</text>
+<text x="1183.57" y="400" transform="rotate(-90 1183.57 400)">1404</text>
+<text x="1270.17" y="350" transform="rotate(-90 1270.17 350)">1504</text>
+<text x="1356.77" y="400" transform="rotate(-90 1356.77 400)">1604</text>
+<text x="1443.38" y="350" transform="rotate(-90 1443.38 350)">1704</text>
+<text x="1529.98" y="400" transform="rotate(-90 1529.98 400)">1804</text>
+<text x="1616.58" y="350" transform="rotate(-90 1616.58 350)">1904</text>
+<text x="57.735" y="450" transform="rotate(-90 57.735 450)">0105</text>
+<text x="144.338" y="500" transform="rotate(-90 144.338 500)">0205</text>
+<text x="230.94" y="450" transform="rotate(-90 230.94 450)">0305</text>
+<text x="317.543" y="500" transform="rotate(-90 317.543 500)">0405</text>
+<text x="404.145" y="450" transform="rotate(-90 404.145 450)">0505</text>
+<text x="490.748" y="500" transform="rotate(-90 490.748 500)">0605</text>
+<text x="577.35" y="450" transform="rotate(-90 577.35 450)">0705</text>
+<text x="663.953" y="500" transform="rotate(-90 663.953 500)">0805</text>
+<text x="750.555" y="450" transform="rotate(-90 750.555 450)">0905</text>
+<text x="837.158" y="500" transform="rotate(-90 837.158 500)">1005</text>
+<text x="923.76" y="450" transform="rotate(-90 923.76 450)">1105</text>
+<text x="1010.36" y="500" transform="rotate(-90 1010.36 500)">1205</text>
+<text x="1096.97" y="450" transform="rotate(-90 1096.97 450)">1305</text>
+<text x="1183.57" y="500" transform="rotate(-90 1183.57 500)">1405</text>
+<text x="1270.17" y="450" transform="rotate(-90 1270.17 450)">1505</text>
+<text x="1356.77" y="500" transform="rotate(-90 1356.77 500)">1605</text>
+<text x="1443.38" y="450" transform="rotate(-90 1443.38 450)">1705</text>
+<text x="1529.98" y="500" transform="rotate(-90 1529.98 500)">1805</text>
+<text x="1616.58" y="450" transform="rotate(-90 1616.58 450)">1905</text>
+<text x="57.735" y="550" transform="rotate(-90 57.735 550)">0106</text>
+<text x="144.338" y="600" transform="rotate(-90 144.338 600)">0206</text>
+<text x="230.94" y="550" transform="rotate(-90 230.94 550)">0306</text>
+<text x="317.543" y="600" transform="rotate(-90 317.543 600)">0406</text>
+<text x="404.145" y="550" transform="rotate(-90 404.145 550)">0506</text>
+<text x="490.748" y="600" transform="rotate(-90 490.748 600)">0606</text>
+<text x="577.35" y="550" transform="rotate(-90 577.35 550)">0706</text>
+<text x="663.953" y="600" transform="rotate(-90 663.953 600)">0806</text>
+<text x="750.555" y="550" transform="rotate(-90 750.555 550)">0906</text>
+<text x="837.158" y="600" transform="rotate(-90 837.158 600)">1006</text>
+<text x="923.76" y="550" transform="rotate(-90 923.76 550)">1106</text>
+<text x="1010.36" y="600" transform="rotate(-90 1010.36 600)">1206</text>
+<text x="1096.97" y="550" transform="rotate(-90 1096.97 550)">1306</text>
+<text x="1183.57" y="600" transform="rotate(-90 1183.57 600)">1406</text>
+<text x="1270.17" y="550" transform="rotate(-90 1270.17 550)">1506</text>
+<text x="1356.77" y="600" transform="rotate(-90 1356.77 600)">1606</text>
+<text x="1443.38" y="550" transform="rotate(-90 1443.38 550)">1706</text>
+<text x="1529.98" y="600" transform="rotate(-90 1529.98 600)">1806</text>
+<text x="1616.58" y="550" transform="rotate(-90 1616.58 550)">1906</text>
+<text x="57.735" y="650" transform="rotate(-90 57.735 650)">0107</text>
+<text x="144.338" y="700" transform="rotate(-90 144.338 700)">0207</text>
+<text x="230.94" y="650" transform="rotate(-90 230.94 650)">0307</text>
+<text x="317.543" y="700" transform="rotate(-90 317.543 700)">0407</text>
+<text x="404.145" y="650" transform="rotate(-90 404.145 650)">0507</text>
+<text x="490.748" y="700" transform="rotate(-90 490.748 700)">0607</text>
+<text x="577.35" y="650" transform="rotate(-90 577.35 650)">0707</text>
+<text x="663.953" y="700" transform="rotate(-90 663.953 700)">0807</text>
+<text x="750.555" y="650" transform="rotate(-90 750.555 650)">0907</text>
+<text x="837.158" y="700" transform="rotate(-90 837.158 700)">1007</text>
+<text x="923.76" y="650" transform="rotate(-90 923.76 650)">1107</text>
+<text x="1010.36" y="700" transform="rotate(-90 1010.36 700)">1207</text>
+<text x="1096.97" y="650" transform="rotate(-90 1096.97 650)">1307</text>
+<text x="1183.57" y="700" transform="rotate(-90 1183.57 700)">1407</text>
+<text x="1270.17" y="650" transform="rotate(-90 1270.17 650)">1507</text>
+<text x="1356.77" y="700" transform="rotate(-90 1356.77 700)">1607</text>
+<text x="1443.38" y="650" transform="rotate(-90 1443.38 650)">1707</text>
+<text x="1529.98" y="700" transform="rotate(-90 1529.98 700)">1807</text>
+<text x="1616.58" y="650" transform="rotate(-90 1616.58 650)">1907</text>
+<text x="57.735" y="750" transform="rotate(-90 57.735 750)">0108</text>
+<text x="144.338" y="800" transform="rotate(-90 144.338 800)">0208</text>
+<text x="230.94" y="750" transform="rotate(-90 230.94 750)">0308</text>
+<text x="317.543" y="800" transform="rotate(-90 317.543 800)">0408</text>
+<text x="404.145" y="750" transform="rotate(-90 404.145 750)">0508</text>
+<text x="490.748" y="800" transform="rotate(-90 490.748 800)">0608</text>
+<text x="577.35" y="750" transform="rotate(-90 577.35 750)">0708</text>
+<text x="663.953" y="800" transform="rotate(-90 663.953 800)">0808</text>
+<text x="750.555" y="750" transform="rotate(-90 750.555 750)">0908</text>
+<text x="837.158" y="800" transform="rotate(-90 837.158 800)">1008</text>
+<text x="923.76" y="750" transform="rotate(-90 923.76 750)">1108</text>
+<text x="1010.36" y="800" transform="rotate(-90 1010.36 800)">1208</text>
+<text x="1096.97" y="750" transform="rotate(-90 1096.97 750)">1308</text>
+<text x="1183.57" y="800" transform="rotate(-90 1183.57 800)">1408</text>
+<text x="1270.17" y="750" transform="rotate(-90 1270.17 750)">1508</text>
+<text x="1356.77" y="800" transform="rotate(-90 1356.77 800)">1608</text>
+<text x="1443.38" y="750" transform="rotate(-90 1443.38 750)">1708</text>
+<text x="1529.98" y="800" transform="rotate(-90 1529.98 800)">1808</text>
+<text x="1616.58" y="750" transform="rotate(-90 1616.58 750)">1908</text>
+<text x="57.735" y="850" transform="rotate(-90 57.735 850)">0109</text>
+<text x="144.338" y="900" transform="rotate(-90 144.338 900)">0209</text>
+<text x="230.94" y="850" transform="rotate(-90 230.94 850)">0309</text>
+<text x="317.543" y="900" transform="rotate(-90 317.543 900)">0409</text>
+<text x="404.145" y="850" transform="rotate(-90 404.145 850)">0509</text>
+<text x="490.748" y="900" transform="rotate(-90 490.748 900)">0609</text>
+<text x="577.35" y="850" transform="rotate(-90 577.35 850)">0709</text>
+<text x="663.953" y="900" transform="rotate(-90 663.953 900)">0809</text>
+<text x="750.555" y="850" transform="rotate(-90 750.555 850)">0909</text>
+<text x="837.158" y="900" transform="rotate(-90 837.158 900)">1009</text>
+<text x="923.76" y="850" transform="rotate(-90 923.76 850)">1109</text>
+<text x="1010.36" y="900" transform="rotate(-90 1010.36 900)">1209</text>
+<text x="1096.97" y="850" transform="rotate(-90 1096.97 850)">1309</text>
+<text x="1183.57" y="900" transform="rotate(-90 1183.57 900)">1409</text>
+<text x="1270.17" y="850" transform="rotate(-90 1270.17 850)">1509</text>
+<text x="1356.77" y="900" transform="rotate(-90 1356.77 900)">1609</text>
+<text x="1443.38" y="850" transform="rotate(-90 1443.38 850)">1709</text>
+<text x="1529.98" y="900" transform="rotate(-90 1529.98 900)">1809</text>
+<text x="1616.58" y="850" transform="rotate(-90 1616.58 850)">1909</text>
+<text x="57.735" y="950" transform="rotate(-90 57.735 950)">0110</text>
+<text x="144.338" y="1000" transform="rotate(-90 144.338 1000)">0210</text>
+<text x="230.94" y="950" transform="rotate(-90 230.94 950)">0310</text>
+<text x="317.543" y="1000" transform="rotate(-90 317.543 1000)">0410</text>
+<text x="404.145" y="950" transform="rotate(-90 404.145 950)">0510</text>
+<text x="490.748" y="1000" transform="rotate(-90 490.748 1000)">0610</text>
+<text x="577.35" y="950" transform="rotate(-90 577.35 950)">0710</text>
+<text x="663.953" y="1000" transform="rotate(-90 663.953 1000)">0810</text>
+<text x="750.555" y="950" transform="rotate(-90 750.555 950)">0910</text>
+<text x="837.158" y="1000" transform="rotate(-90 837.158 1000)">1010</text>
+<text x="923.76" y="950" transform="rotate(-90 923.76 950)">1110</text>
+<text x="1010.36" y="1000" transform="rotate(-90 1010.36 1000)">1210</text>
+<text x="1096.97" y="950" transform="rotate(-90 1096.97 950)">1310</text>
+<text x="1183.57" y="1000" transform="rotate(-90 1183.57 1000)">1410</text>
+<text x="1270.17" y="950" transform="rotate(-90 1270.17 950)">1510</text>
+<text x="1356.77" y="1000" transform="rotate(-90 1356.77 1000)">1610</text>
+<text x="1443.38" y="950" transform="rotate(-90 1443.38 950)">1710</text>
+<text x="1529.98" y="1000" transform="rotate(-90 1529.98 1000)">1810</text>
+<text x="1616.58" y="950" transform="rotate(-90 1616.58 950)">1910</text>
+<text x="57.735" y="1050" transform="rotate(-90 57.735 1050)">0111</text>
+<text x="144.338" y="1100" transform="rotate(-90 144.338 1100)">0211</text>
+<text x="230.94" y="1050" transform="rotate(-90 230.94 1050)">0311</text>
+<text x="317.543" y="1100" transform="rotate(-90 317.543 1100)">0411</text>
+<text x="404.145" y="1050" transform="rotate(-90 404.145 1050)">0511</text>
+<text x="490.748" y="1100" transform="rotate(-90 490.748 1100)">0611</text>
+<text x="577.35" y="1050" transform="rotate(-90 577.35 1050)">0711</text>
+<text x="663.953" y="1100" transform="rotate(-90 663.953 1100)">0811</text>
+<text x="750.555" y="1050" transform="rotate(-90 750.555 1050)">0911</text>
+<text x="837.158" y="1100" transform="rotate(-90 837.158 1100)">1011</text>
+<text x="923.76" y="1050" transform="rotate(-90 923.76 1050)">1111</text>
+<text x="1010.36" y="1100" transform="rotate(-90 1010.36 1100)">1211</text>
+<text x="1096.97" y="1050" transform="rotate(-90 1096.97 1050)">1311</text>
+<text x="1183.57" y="1100" transform="rotate(-90 1183.57 1100)">1411</text>
+<text x="1270.17" y="1050" transform="rotate(-90 1270.17 1050)">1511</text>
+<text x="1356.77" y="1100" transform="rotate(-90 1356.77 1100)">1611</text>
+<text x="1443.38" y="1050" transform="rotate(-90 1443.38 1050)">1711</text>
+<text x="1529.98" y="1100" transform="rotate(-90 1529.98 1100)">1811</text>
+<text x="1616.58" y="1050" transform="rotate(-90 1616.58 1050)">1911</text>
+<text x="57.735" y="1150" transform="rotate(-90 57.735 1150)">0112</text>
+<text x="144.338" y="1200" transform="rotate(-90 144.338 1200)">0212</text>
+<text x="230.94" y="1150" transform="rotate(-90 230.94 1150)">0312</text>
+<text x="317.543" y="1200" transform="rotate(-90 317.543 1200)">0412</text>
+<text x="404.145" y="1150" transform="rotate(-90 404.145 1150)">0512</text>
+<text x="490.748" y="1200" transform="rotate(-90 490.748 1200)">0612</text>
+<text x="577.35" y="1150" transform="rotate(-90 577.35 1150)">0712</text>
+<text x="663.953" y="1200" transform="rotate(-90 663.953 1200)">0812</text>
+<text x="750.555" y="1150" transform="rotate(-90 750.555 1150)">0912</text>
+<text x="837.158" y="1200" transform="rotate(-90 837.158 1200)">1012</text>
+<text x="923.76" y="1150" transform="rotate(-90 923.76 1150)">1112</text>
+<text x="1010.36" y="1200" transform="rotate(-90 1010.36 1200)">1212</text>
+<text x="1096.97" y="1150" transform="rotate(-90 1096.97 1150)">1312</text>
+<text x="1183.57" y="1200" transform="rotate(-90 1183.57 1200)">1412</text>
+<text x="1270.17" y="1150" transform="rotate(-90 1270.17 1150)">1512</text>
+<text x="1356.77" y="1200" transform="rotate(-90 1356.77 1200)">1612</text>
+<text x="1443.38" y="1150" transform="rotate(-90 1443.38 1150)">1712</text>
+<text x="1529.98" y="1200" transform="rotate(-90 1529.98 1200)">1812</text>
+<text x="1616.58" y="1150" transform="rotate(-90 1616.58 1150)">1912</text>
+<text x="57.735" y="1250" transform="rotate(-90 57.735 1250)">0113</text>
+<text x="144.338" y="1300" transform="rotate(-90 144.338 1300)">0213</text>
+<text x="230.94" y="1250" transform="rotate(-90 230.94 1250)">0313</text>
+<text x="317.543" y="1300" transform="rotate(-90 317.543 1300)">0413</text>
+<text x="404.145" y="1250" transform="rotate(-90 404.145 1250)">0513</text>
+<text x="490.748" y="1300" transform="rotate(-90 490.748 1300)">0613</text>
+<text x="577.35" y="1250" transform="rotate(-90 577.35 1250)">0713</text>
+<text x="663.953" y="1300" transform="rotate(-90 663.953 1300)">0813</text>
+<text x="750.555" y="1250" transform="rotate(-90 750.555 1250)">0913</text>
+<text x="837.158" y="1300" transform="rotate(-90 837.158 1300)">1013</text>
+<text x="923.76" y="1250" transform="rotate(-90 923.76 1250)">1113</text>
+<text x="1010.36" y="1300" transform="rotate(-90 1010.36 1300)">1213</text>
+<text x="1096.97" y="1250" transform="rotate(-90 1096.97 1250)">1313</text>
+<text x="1183.57" y="1300" transform="rotate(-90 1183.57 1300)">1413</text>
+<text x="1270.17" y="1250" transform="rotate(-90 1270.17 1250)">1513</text>
+<text x="1356.77" y="1300" transform="rotate(-90 1356.77 1300)">1613</text>
+<text x="1443.38" y="1250" transform="rotate(-90 1443.38 1250)">1713</text>
+<text x="1529.98" y="1300" transform="rotate(-90 1529.98 1300)">1813</text>
+<text x="1616.58" y="1250" transform="rotate(-90 1616.58 1250)">1913</text>
+<text x="57.735" y="1350" transform="rotate(-90 57.735 1350)">0114</text>
+<text x="144.338" y="1400" transform="rotate(-90 144.338 1400)">0214</text>
+<text x="230.94" y="1350" transform="rotate(-90 230.94 1350)">0314</text>
+<text x="317.543" y="1400" transform="rotate(-90 317.543 1400)">0414</text>
+<text x="404.145" y="1350" transform="rotate(-90 404.145 1350)">0514</text>
+<text x="490.748" y="1400" transform="rotate(-90 490.748 1400)">0614</text>
+<text x="577.35" y="1350" transform="rotate(-90 577.35 1350)">0714</text>
+<text x="663.953" y="1400" transform="rotate(-90 663.953 1400)">0814</text>
+<text x="750.555" y="1350" transform="rotate(-90 750.555 1350)">0914</text>
+<text x="837.158" y="1400" transform="rotate(-90 837.158 1400)">1014</text>
+<text x="923.76" y="1350" transform="rotate(-90 923.76 1350)">1114</text>
+<text x="1010.36" y="1400" transform="rotate(-90 1010.36 1400)">1214</text>
+<text x="1096.97" y="1350" transform="rotate(-90 1096.97 1350)">1314</text>
+<text x="1183.57" y="1400" transform="rotate(-90 1183.57 1400)">1414</text>
+<text x="1270.17" y="1350" transform="rotate(-90 1270.17 1350)">1514</text>
+<text x="1356.77" y="1400" transform="rotate(-90 1356.77 1400)">1614</text>
+<text x="1443.38" y="1350" transform="rotate(-90 1443.38 1350)">1714</text>
+<text x="1529.98" y="1400" transform="rotate(-90 1529.98 1400)">1814</text>
+<text x="1616.58" y="1350" transform="rotate(-90 1616.58 1350)">1914</text>
+<text x="57.735" y="1450" transform="rotate(-90 57.735 1450)">0115</text>
+<text x="144.338" y="1500" transform="rotate(-90 144.338 1500)">0215</text>
+<text x="230.94" y="1450" transform="rotate(-90 230.94 1450)">0315</text>
+<text x="317.543" y="1500" transform="rotate(-90 317.543 1500)">0415</text>
+<text x="404.145" y="1450" transform="rotate(-90 404.145 1450)">0515</text>
+<text x="490.748" y="1500" transform="rotate(-90 490.748 1500)">0615</text>
+<text x="577.35" y="1450" transform="rotate(-90 577.35 1450)">0715</text>
+<text x="663.953" y="1500" transform="rotate(-90 663.953 1500)">0815</text>
+<text x="750.555" y="1450" transform="rotate(-90 750.555 1450)">0915</text>
+<text x="837.158" y="1500" transform="rotate(-90 837.158 1500)">1015</text>
+<text x="923.76" y="1450" transform="rotate(-90 923.76 1450)">1115</text>
+<text x="1010.36" y="1500" transform="rotate(-90 1010.36 1500)">1215</text>
+<text x="1096.97" y="1450" transform="rotate(-90 1096.97 1450)">1315</text>
+<text x="1183.57" y="1500" transform="rotate(-90 1183.57 1500)">1415</text>
+<text x="1270.17" y="1450" transform="rotate(-90 1270.17 1450)">1515</text>
+<text x="1356.77" y="1500" transform="rotate(-90 1356.77 1500)">1615</text>
+<text x="1443.38" y="1450" transform="rotate(-90 1443.38 1450)">1715</text>
+<text x="1529.98" y="1500" transform="rotate(-90 1529.98 1500)">1815</text>
+<text x="1616.58" y="1450" transform="rotate(-90 1616.58 1450)">1915</text>
+<text x="57.735" y="1550" transform="rotate(-90 57.735 1550)">0116</text>
+<text x="144.338" y="1600" transform="rotate(-90 144.338 1600)">0216</text>
+<text x="230.94" y="1550" transform="rotate(-90 230.94 1550)">0316</text>
+<text x="317.543" y="1600" transform="rotate(-90 317.543 1600)">0416</text>
+<text x="404.145" y="1550" transform="rotate(-90 404.145 1550)">0516</text>
+<text x="490.748" y="1600" transform="rotate(-90 490.748 1600)">0616</text>
+<text x="577.35" y="1550" transform="rotate(-90 577.35 1550)">0716</text>
+<text x="663.953" y="1600" transform="rotate(-90 663.953 1600)">0816</text>
+<text x="750.555" y="1550" transform="rotate(-90 750.555 1550)">0916</text>
+<text x="837.158" y="1600" transform="rotate(-90 837.158 1600)">1016</text>
+<text x="923.76" y="1550" transform="rotate(-90 923.76 1550)">1116</text>
+<text x="1010.36" y="1600" transform="rotate(-90 1010.36 1600)">1216</text>
+<text x="1096.97" y="1550" transform="rotate(-90 1096.97 1550)">1316</text>
+<text x="1183.57" y="1600" transform="rotate(-90 1183.57 1600)">1416</text>
+<text x="1270.17" y="1550" transform="rotate(-90 1270.17 1550)">1516</text>
+<text x="1356.77" y="1600" transform="rotate(-90 1356.77 1600)">1616</text>
+<text x="1443.38" y="1550" transform="rotate(-90 1443.38 1550)">1716</text>
+<text x="1529.98" y="1600" transform="rotate(-90 1529.98 1600)">1816</text>
+<text x="1616.58" y="1550" transform="rotate(-90 1616.58 1550)">1916</text>
+<text x="57.735" y="1650" transform="rotate(-90 57.735 1650)">0117</text>
+<text x="144.338" y="1700" transform="rotate(-90 144.338 1700)">0217</text>
+<text x="230.94" y="1650" transform="rotate(-90 230.94 1650)">0317</text>
+<text x="317.543" y="1700" transform="rotate(-90 317.543 1700)">0417</text>
+<text x="404.145" y="1650" transform="rotate(-90 404.145 1650)">0517</text>
+<text x="490.748" y="1700" transform="rotate(-90 490.748 1700)">0617</text>
+<text x="577.35" y="1650" transform="rotate(-90 577.35 1650)">0717</text>
+<text x="663.953" y="1700" transform="rotate(-90 663.953 1700)">0817</text>
+<text x="750.555" y="1650" transform="rotate(-90 750.555 1650)">0917</text>
+<text x="837.158" y="1700" transform="rotate(-90 837.158 1700)">1017</text>
+<text x="923.76" y="1650" transform="rotate(-90 923.76 1650)">1117</text>
+<text x="1010.36" y="1700" transform="rotate(-90 1010.36 1700)">1217</text>
+<text x="1096.97" y="1650" transform="rotate(-90 1096.97 1650)">1317</text>
+<text x="1183.57" y="1700" transform="rotate(-90 1183.57 1700)">1417</text>
+<text x="1270.17" y="1650" transform="rotate(-90 1270.17 1650)">1517</text>
+<text x="1356.77" y="1700" transform="rotate(-90 1356.77 1700)">1617</text>
+<text x="1443.38" y="1650" transform="rotate(-90 1443.38 1650)">1717</text>
+<text x="1529.98" y="1700" transform="rotate(-90 1529.98 1700)">1817</text>
+<text x="1616.58" y="1650" transform="rotate(-90 1616.58 1650)">1917</text>
+<text x="57.735" y="1750" transform="rotate(-90 57.735 1750)">0118</text>
+<text x="144.338" y="1800" transform="rotate(-90 144.338 1800)">0218</text>
+<text x="230.94" y="1750" transform="rotate(-90 230.94 1750)">0318</text>
+<text x="317.543" y="1800" transform="rotate(-90 317.543 1800)">0418</text>
+<text x="404.145" y="1750" transform="rotate(-90 404.145 1750)">0518</text>
+<text x="490.748" y="1800" transform="rotate(-90 490.748 1800)">0618</text>
+<text x="577.35" y="1750" transform="rotate(-90 577.35 1750)">0718</text>
+<text x="663.953" y="1800" transform="rotate(-90 663.953 1800)">0818</text>
+<text x="750.555" y="1750" transform="rotate(-90 750.555 1750)">0918</text>
+<text x="837.158" y="1800" transform="rotate(-90 837.158 1800)">1018</text>
+<text x="923.76" y="1750" transform="rotate(-90 923.76 1750)">1118</text>
+<text x="1010.36" y="1800" transform="rotate(-90 1010.36 1800)">1218</text>
+<text x="1096.97" y="1750" transform="rotate(-90 1096.97 1750)">1318</text>
+<text x="1183.57" y="1800" transform="rotate(-90 1183.57 1800)">1418</text>
+<text x="1270.17" y="1750" transform="rotate(-90 1270.17 1750)">1518</text>
+<text x="1356.77" y="1800" transform="rotate(-90 1356.77 1800)">1618</text>
+<text x="1443.38" y="1750" transform="rotate(-90 1443.38 1750)">1718</text>
+<text x="1529.98" y="1800" transform="rotate(-90 1529.98 1800)">1818</text>
+<text x="1616.58" y="1750" transform="rotate(-90 1616.58 1750)">1918</text>
+<text x="57.735" y="1850" transform="rotate(-90 57.735 1850)">0119</text>
+<text x="144.338" y="1900" transform="rotate(-90 144.338 1900)">0219</text>
+<text x="230.94" y="1850" transform="rotate(-90 230.94 1850)">0319</text>
+<text x="317.543" y="1900" transform="rotate(-90 317.543 1900)">0419</text>
+<text x="404.145" y="1850" transform="rotate(-90 404.145 1850)">0519</text>
+<text x="490.748" y="1900" transform="rotate(-90 490.748 1900)">0619</text>
+<text x="577.35" y="1850" transform="rotate(-90 577.35 1850)">0719</text>
+<text x="663.953" y="1900" transform="rotate(-90 663.953 1900)">0819</text>
+<text x="750.555" y="1850" transform="rotate(-90 750.555 1850)">0919</text>
+<text x="837.158" y="1900" transform="rotate(-90 837.158 1900)">1019</text>
+<text x="923.76" y="1850" transform="rotate(-90 923.76 1850)">1119</text>
+<text x="1010.36" y="1900" transform="rotate(-90 1010.36 1900)">1219</text>
+<text x="1096.97" y="1850" transform="rotate(-90 1096.97 1850)">1319</text>
+<text x="1183.57" y="1900" transform="rotate(-90 1183.57 1900)">1419</text>
+<text x="1270.17" y="1850" transform="rotate(-90 1270.17 1850)">1519</text>
+<text x="1356.77" y="1900" transform="rotate(-90 1356.77 1900)">1619</text>
+<text x="1443.38" y="1850" transform="rotate(-90 1443.38 1850)">1719</text>
+<text x="1529.98" y="1900" transform="rotate(-90 1529.98 1900)">1819</text>
+<text x="1616.58" y="1850" transform="rotate(-90 1616.58 1850)">1919</text>
+<text x="57.735" y="1950" transform="rotate(-90 57.735 1950)">0120</text>
+<text x="144.338" y="2000" transform="rotate(-90 144.338 2000)">0220</text>
+<text x="230.94" y="1950" transform="rotate(-90 230.94 1950)">0320</text>
+<text x="317.543" y="2000" transform="rotate(-90 317.543 2000)">0420</text>
+<text x="404.145" y="1950" transform="rotate(-90 404.145 1950)">0520</text>
+<text x="490.748" y="2000" transform="rotate(-90 490.748 2000)">0620</text>
+<text x="577.35" y="1950" transform="rotate(-90 577.35 1950)">0720</text>
+<text x="663.953" y="2000" transform="rotate(-90 663.953 2000)">0820</text>
+<text x="750.555" y="1950" transform="rotate(-90 750.555 1950)">0920</text>
+<text x="837.158" y="2000" transform="rotate(-90 837.158 2000)">1020</text>
+<text x="923.76" y="1950" transform="rotate(-90 923.76 1950)">1120</text>
+<text x="1010.36" y="2000" transform="rotate(-90 1010.36 2000)">1220</text>
+<text x="1096.97" y="1950" transform="rotate(-90 1096.97 1950)">1320</text>
+<text x="1183.57" y="2000" transform="rotate(-90 1183.57 2000)">1420</text>
+<text x="1270.17" y="1950" transform="rotate(-90 1270.17 1950)">1520</text>
+<text x="1356.77" y="2000" transform="rotate(-90 1356.77 2000)">1620</text>
+<text x="1443.38" y="1950" transform="rotate(-90 1443.38 1950)">1720</text>
+<text x="1529.98" y="2000" transform="rotate(-90 1529.98 2000)">1820</text>
+<text x="1616.58" y="1950" transform="rotate(-90 1616.58 1950)">1920</text>
+<text x="57.735" y="2050" transform="rotate(-90 57.735 2050)">0121</text>
+<text x="144.338" y="2100" transform="rotate(-90 144.338 2100)">0221</text>
+<text x="230.94" y="2050" transform="rotate(-90 230.94 2050)">0321</text>
+<text x="317.543" y="2100" transform="rotate(-90 317.543 2100)">0421</text>
+<text x="404.145" y="2050" transform="rotate(-90 404.145 2050)">0521</text>
+<text x="490.748" y="2100" transform="rotate(-90 490.748 2100)">0621</text>
+<text x="577.35" y="2050" transform="rotate(-90 577.35 2050)">0721</text>
+<text x="663.953" y="2100" transform="rotate(-90 663.953 2100)">0821</text>
+<text x="750.555" y="2050" transform="rotate(-90 750.555 2050)">0921</text>
+<text x="837.158" y="2100" transform="rotate(-90 837.158 2100)">1021</text>
+<text x="923.76" y="2050" transform="rotate(-90 923.76 2050)">1121</text>
+<text x="1010.36" y="2100" transform="rotate(-90 1010.36 2100)">1221</text>
+<text x="1096.97" y="2050" transform="rotate(-90 1096.97 2050)">1321</text>
+<text x="1183.57" y="2100" transform="rotate(-90 1183.57 2100)">1421</text>
+<text x="1270.17" y="2050" transform="rotate(-90 1270.17 2050)">1521</text>
+<text x="1356.77" y="2100" transform="rotate(-90 1356.77 2100)">1621</text>
+<text x="1443.38" y="2050" transform="rotate(-90 1443.38 2050)">1721</text>
+<text x="1529.98" y="2100" transform="rotate(-90 1529.98 2100)">1821</text>
+<text x="1616.58" y="2050" transform="rotate(-90 1616.58 2050)">1921</text>
+<text x="57.735" y="2150" transform="rotate(-90 57.735 2150)">0122</text>
+<text x="144.338" y="2200" transform="rotate(-90 144.338 2200)">0222</text>
+<text x="230.94" y="2150" transform="rotate(-90 230.94 2150)">0322</text>
+<text x="317.543" y="2200" transform="rotate(-90 317.543 2200)">0422</text>
+<text x="404.145" y="2150" transform="rotate(-90 404.145 2150)">0522</text>
+<text x="490.748" y="2200" transform="rotate(-90 490.748 2200)">0622</text>
+<text x="577.35" y="2150" transform="rotate(-90 577.35 2150)">0722</text>
+<text x="663.953" y="2200" transform="rotate(-90 663.953 2200)">0822</text>
+<text x="750.555" y="2150" transform="rotate(-90 750.555 2150)">0922</text>
+<text x="837.158" y="2200" transform="rotate(-90 837.158 2200)">1022</text>
+<text x="923.76" y="2150" transform="rotate(-90 923.76 2150)">1122</text>
+<text x="1010.36" y="2200" transform="rotate(-90 1010.36 2200)">1222</text>
+<text x="1096.97" y="2150" transform="rotate(-90 1096.97 2150)">1322</text>
+<text x="1183.57" y="2200" transform="rotate(-90 1183.57 2200)">1422</text>
+<text x="1270.17" y="2150" transform="rotate(-90 1270.17 2150)">1522</text>
+<text x="1356.77" y="2200" transform="rotate(-90 1356.77 2200)">1622</text>
+<text x="1443.38" y="2150" transform="rotate(-90 1443.38 2150)">1722</text>
+<text x="1529.98" y="2200" transform="rotate(-90 1529.98 2200)">1822</text>
+<text x="1616.58" y="2150" transform="rotate(-90 1616.58 2150)">1922</text>
+<text x="57.735" y="2250" transform="rotate(-90 57.735 2250)">0123</text>
+<text x="144.338" y="2300" transform="rotate(-90 144.338 2300)">0223</text>
+<text x="230.94" y="2250" transform="rotate(-90 230.94 2250)">0323</text>
+<text x="317.543" y="2300" transform="rotate(-90 317.543 2300)">0423</text>
+<text x="404.145" y="2250" transform="rotate(-90 404.145 2250)">0523</text>
+<text x="490.748" y="2300" transform="rotate(-90 490.748 2300)">0623</text>
+<text x="577.35" y="2250" transform="rotate(-90 577.35 2250)">0723</text>
+<text x="663.953" y="2300" transform="rotate(-90 663.953 2300)">0823</text>
+<text x="750.555" y="2250" transform="rotate(-90 750.555 2250)">0923</text>
+<text x="837.158" y="2300" transform="rotate(-90 837.158 2300)">1023</text>
+<text x="923.76" y="2250" transform="rotate(-90 923.76 2250)">1123</text>
+<text x="1010.36" y="2300" transform="rotate(-90 1010.36 2300)">1223</text>
+<text x="1096.97" y="2250" transform="rotate(-90 1096.97 2250)">1323</text>
+<text x="1183.57" y="2300" transform="rotate(-90 1183.57 2300)">1423</text>
+<text x="1270.17" y="2250" transform="rotate(-90 1270.17 2250)">1523</text>
+<text x="1356.77" y="2300" transform="rotate(-90 1356.77 2300)">1623</text>
+<text x="1443.38" y="2250" transform="rotate(-90 1443.38 2250)">1723</text>
+<text x="1529.98" y="2300" transform="rotate(-90 1529.98 2300)">1823</text>
+<text x="1616.58" y="2250" transform="rotate(-90 1616.58 2250)">1923</text>
+<text x="57.735" y="2350" transform="rotate(-90 57.735 2350)">0124</text>
+<text x="144.338" y="2400" transform="rotate(-90 144.338 2400)">0224</text>
+<text x="230.94" y="2350" transform="rotate(-90 230.94 2350)">0324</text>
+<text x="317.543" y="2400" transform="rotate(-90 317.543 2400)">0424</text>
+<text x="404.145" y="2350" transform="rotate(-90 404.145 2350)">0524</text>
+<text x="490.748" y="2400" transform="rotate(-90 490.748 2400)">0624</text>
+<text x="577.35" y="2350" transform="rotate(-90 577.35 2350)">0724</text>
+<text x="663.953" y="2400" transform="rotate(-90 663.953 2400)">0824</text>
+<text x="750.555" y="2350" transform="rotate(-90 750.555 2350)">0924</text>
+<text x="837.158" y="2400" transform="rotate(-90 837.158 2400)">1024</text>
+<text x="923.76" y="2350" transform="rotate(-90 923.76 2350)">1124</text>
+<text x="1010.36" y="2400" transform="rotate(-90 1010.36 2400)">1224</text>
+<text x="1096.97" y="2350" transform="rotate(-90 1096.97 2350)">1324</text>
+<text x="1183.57" y="2400" transform="rotate(-90 1183.57 2400)">1424</text>
+<text x="1270.17" y="2350" transform="rotate(-90 1270.17 2350)">1524</text>
+<text x="1356.77" y="2400" transform="rotate(-90 1356.77 2400)">1624</text>
+<text x="1443.38" y="2350" transform="rotate(-90 1443.38 2350)">1724</text>
+<text x="1529.98" y="2400" transform="rotate(-90 1529.98 2400)">1824</text>
+<text x="1616.58" y="2350" transform="rotate(-90 1616.58 2350)">1924</text>
+<text x="57.735" y="2450" transform="rotate(-90 57.735 2450)">0125</text>
+<text x="144.338" y="2500" transform="rotate(-90 144.338 2500)">0225</text>
+<text x="230.94" y="2450" transform="rotate(-90 230.94 2450)">0325</text>
+<text x="317.543" y="2500" transform="rotate(-90 317.543 2500)">0425</text>
+<text x="404.145" y="2450" transform="rotate(-90 404.145 2450)">0525</text>
+<text x="490.748" y="2500" transform="rotate(-90 490.748 2500)">0625</text>
+<text x="577.35" y="2450" transform="rotate(-90 577.35 2450)">0725</text>
+<text x="663.953" y="2500" transform="rotate(-90 663.953 2500)">0825</text>
+<text x="750.555" y="2450" transform="rotate(-90 750.555 2450)">0925</text>
+<text x="837.158" y="2500" transform="rotate(-90 837.158 2500)">1025</text>
+<text x="923.76" y="2450" transform="rotate(-90 923.76 2450)">1125</text>
+<text x="1010.36" y="2500" transform="rotate(-90 1010.36 2500)">1225</text>
+<text x="1096.97" y="2450" transform="rotate(-90 1096.97 2450)">1325</text>
+<text x="1183.57" y="2500" transform="rotate(-90 1183.57 2500)">1425</text>
+<text x="1270.17" y="2450" transform="rotate(-90 1270.17 2450)">1525</text>
+<text x="1356.77" y="2500" transform="rotate(-90 1356.77 2500)">1625</text>
+<text x="1443.38" y="2450" transform="rotate(-90 1443.38 2450)">1725</text>
+<text x="1529.98" y="2500" transform="rotate(-90 1529.98 2500)">1825</text>
+<text x="1616.58" y="2450" transform="rotate(-90 1616.58 2450)">1925</text>
+<text x="57.735" y="2550" transform="rotate(-90 57.735 2550)">0126</text>
+<text x="144.338" y="2600" transform="rotate(-90 144.338 2600)">0226</text>
+<text x="230.94" y="2550" transform="rotate(-90 230.94 2550)">0326</text>
+<text x="317.543" y="2600" transform="rotate(-90 317.543 2600)">0426</text>
+<text x="404.145" y="2550" transform="rotate(-90 404.145 2550)">0526</text>
+<text x="490.748" y="2600" transform="rotate(-90 490.748 2600)">0626</text>
+<text x="577.35" y="2550" transform="rotate(-90 577.35 2550)">0726</text>
+<text x="663.953" y="2600" transform="rotate(-90 663.953 2600)">0826</text>
+<text x="750.555" y="2550" transform="rotate(-90 750.555 2550)">0926</text>
+<text x="837.158" y="2600" transform="rotate(-90 837.158 2600)">1026</text>
+<text x="923.76" y="2550" transform="rotate(-90 923.76 2550)">1126</text>
+<text x="1010.36" y="2600" transform="rotate(-90 1010.36 2600)">1226</text>
+<text x="1096.97" y="2550" transform="rotate(-90 1096.97 2550)">1326</text>
+<text x="1183.57" y="2600" transform="rotate(-90 1183.57 2600)">1426</text>
+<text x="1270.17" y="2550" transform="rotate(-90 1270.17 2550)">1526</text>
+<text x="1356.77" y="2600" transform="rotate(-90 1356.77 2600)">1626</text>
+<text x="1443.38" y="2550" transform="rotate(-90 1443.38 2550)">1726</text>
+<text x="1529.98" y="2600" transform="rotate(-90 1529.98 2600)">1826</text>
+<text x="1616.58" y="2550" transform="rotate(-90 1616.58 2550)">1926</text>
+</g>
+</g>
+</svg>
