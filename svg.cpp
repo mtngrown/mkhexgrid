@@ -43,14 +43,14 @@ void Grid::draw_svg()
 
    // write header
    out << "<?xml version=\"1.0\" standalone=\"no\"?>\n"
-          "<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\"\n" 
+          "<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\"\n"
           "   \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">\n"
           "<svg width=\"" << iw
        << "\" height=\"" << ih
        << "\" version=\"1.1\"\n"
           "   xmlns=\"http://www.w3.org/2000/svg\"\n"
           "   xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n";
-   
+
    // write definitions for repeated elements
    out << "<defs>\n";
 
@@ -63,7 +63,7 @@ void Grid::draw_svg()
              << " h " << 2*center_size
              << " M 0 0 m 0 " << -center_size
              << " v " << 2*center_size
-             << "\" />\n";  
+             << "\" />\n";
 
          out << "<g id=\"c-row\">\n";
          for (int c = 0; c < cols; ++c) {
@@ -86,10 +86,10 @@ void Grid::draw_svg()
          break;
       }
    }
- 
+
    // grid definition
    if (lowfirstcol == true) {
-      out << "<path id=\"bottoms\" d=\"M 0 0"; 
+      out << "<path id=\"bottoms\" d=\"M 0 0";
       for (int n = 0; n <= 2*cols-3; ++n) side_skip_path_svg(n);
       out << "\" />\n";
 
@@ -145,14 +145,14 @@ void Grid::draw_svg()
              "fill-opacity: " << bg_opacity << "; "
              "stroke: none;\" />\n";
    }
-   
+
    out << "<g transform=\"translate(";
    if (grain == Horizontal) {
       out << iw-mright << ','
           << mtop+grid_thickness/2 << ") rotate(90)\">\n";
    }
    else {
-      out << mleft+grid_thickness/2 << ',' 
+      out << mleft+grid_thickness/2 << ','
           << mtop+grid_thickness/2 << ")\">\n";
    }
 
@@ -165,7 +165,7 @@ void Grid::draw_svg()
           "\">\n";
 
    if (lowfirstcol == true) {
-      double x = 0.25*hw, 
+      double x = 0.25*hw,
              y = 0.5*hh;
 
       out << "<use x=\"" << x << "\" y=\"" << y
@@ -193,7 +193,7 @@ void Grid::draw_svg()
 
       out << "<use x=\"" << x << "\" y=\"" << y
           << "\" xlink:href=\"#outline\" />\n";
-      
+
       y = hh;
 
       for (int r = 0; r < rows - 1; ++r) {
@@ -242,7 +242,7 @@ void Grid::draw_svg()
       for (int r = 0; r < rows; ++r)
          out << "<use x=\"0" << "\" "
              << "y=\"" << (r + 0.5)*hh
-             << "\" xlink:href=\"#c-row\" />\n"; 
+             << "\" xlink:href=\"#c-row\" />\n";
       out << "</g>\n";
    }
 
@@ -257,7 +257,7 @@ void Grid::draw_svg()
              "text-anchor: middle; "
              "\">\n";
       // NB: CSS requires that font-size have some unit
-   
+
       double bcos = cos(coord_bearing*rad),
              bsin = sin(coord_bearing*rad);
 
@@ -339,7 +339,7 @@ void Grid::draw_svg()
          }
       }
       out << "</g>\n";
-   }   
+   }
 
    out << "</g>\n";
    out << "</svg>" << endl;
