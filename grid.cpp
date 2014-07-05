@@ -37,7 +37,7 @@ Grid::Grid(const map<string, string> &opt)
 {
    map<string, string>::const_iterator i;
 
-   // 
+   //
    // Output Parameters
    //
    i = opt.find("output");
@@ -59,12 +59,12 @@ Grid::Grid(const map<string, string> &opt)
    bg_opacity = grid_opacity =
       coord_opacity = center_opacity = (output == SVG);
 
-   if (output == PS) 
+   if (output == PS)
         grid_color = coord_color = center_color = "0.5 0.5 0.5";
    else grid_color = coord_color = center_color = "808080";
 
    if (output == PNG) bg_color = "ffffff";
- 
+
    //
    // Grid Parameters
    //
@@ -105,7 +105,7 @@ Grid::Grid(const map<string, string> &opt)
 #endif
    coord_bearing = 90;
    coord_tilt = coord_dist = 0;
-   coord_size = 8; 
+   coord_size = 8;
 
    i = opt.find("coord-font");
    if (i != opt.end()) coord_font = i->second;
@@ -138,7 +138,7 @@ Grid::Grid(const map<string, string> &opt)
    if (i != opt.end())
       parse_length("coordinate size", i->second, coord_size);
    if (coord_size <= 0) throw range_error("coordinate size is not positive");
-      
+
    i = opt.find("coord-origin");
    if (i == opt.end())         coord_origin = UpperLeft;
    else if (i->second == "ul") coord_origin = UpperLeft;
@@ -146,7 +146,7 @@ Grid::Grid(const map<string, string> &opt)
    else if (i->second == "ur") coord_origin = UpperRight;
    else if (i->second == "lr") coord_origin = LowerRight;
    else throw
-      runtime_error("unrecognized coordinate origin `" + i->second + "'"); 
+      runtime_error("unrecognized coordinate origin `" + i->second + "'");
 
    coord_cskip = coord_rskip = coord_cstart = coord_rstart = 1;
 
@@ -158,7 +158,7 @@ Grid::Grid(const map<string, string> &opt)
       catch (bad_lexical_cast &) {
          throw runtime_error("coord-column-skip is not an integer");
       }
-      
+
       if (coord_cskip == 0)
          throw range_error("coord-column-skip is not positive");
    }
@@ -205,7 +205,7 @@ Grid::Grid(const map<string, string> &opt)
    coord_order = ColumnsFirst;
    coord_first_fill = true;
    coord_second_fill = true;
-   
+
    i = opt.find("coord-format");
    if (i != opt.end()) {
       if (i->second.empty()) coord_display = false;
@@ -218,7 +218,7 @@ Grid::Grid(const map<string, string> &opt)
    i = opt.find("coord-opacity");
    if (i != opt.end())
       parse_opacity("coordinate opacity", i->second, coord_opacity);
-  
+
    switch (output) {
    case PNG:
       // 90 degrees is down in GD, except for text
@@ -264,7 +264,7 @@ Grid::Grid(const map<string, string> &opt)
 
    //
    // Background Parameters
-   // 
+   //
    i = opt.find("bg-color");
    if (i != opt.end()) parse_color("background color", i->second, bg_color);
 
@@ -314,7 +314,7 @@ Grid::Grid(const map<string, string> &opt)
 
    i = opt.find("hex-height");
    if (i != opt.end()) parse_length("hex height", i->second, hh);
-   
+
    i = opt.find("hex-side");
    if (i != opt.end()) parse_length("hex side", i->second, hs);
 
@@ -328,7 +328,7 @@ Grid::Grid(const map<string, string> &opt)
       }
       if (cols == 0) throw range_error("number of columns is not positive");
    }
- 
+
    i = opt.find("rows");
    if (i != opt.end()) {
       try {
@@ -366,12 +366,12 @@ Grid::Grid(const map<string, string> &opt)
             hs = hw/2;
             more = true;
          }
-         else if (hh) {                
+         else if (hh) {
             hs = hh/(2*sin(60*rad));
             more = true;
          }
       }
-   
+
       if (!hw) {                       // calculate hw
          if (hs) {
             hw = 2*hs;
@@ -382,7 +382,7 @@ Grid::Grid(const map<string, string> &opt)
             more = true;
          }
       }
-   
+
       if (!hh) {                       // calculate hh
          if (hs) {
             hh = 2*hs*sin(60*rad);
@@ -393,40 +393,40 @@ Grid::Grid(const map<string, string> &opt)
             more = true;
          }
       }
-   
+
       if (hw && cols && !iw) {         // calculate iw
          iw = mleft + (0.25+0.75*cols)*hw+grid_thickness + mright;
          more = true;
       }
       else if (hw && !cols && iw) {    // calculate cols
-         cols = (int)floor(((iw-mleft-grid_thickness-mright)/hw - 0.25)/0.75); 
+         cols = (int)floor(((iw-mleft-grid_thickness-mright)/hw - 0.25)/0.75);
          more = true;
       }
       else if (!hw && cols && iw) {    // calculate hw
          hw = (iw-mleft-grid_thickness-mright)/(0.25+0.75*cols);
          more = true;
       }
-   
+
       if (hh && rows && cols && !ih) {         // calculate ih
          if (cols > 1) ih = mtop + (0.5+rows)*hh+grid_thickness + mbottom;
          else ih = mtop + rows*hh + grid_thickness + mbottom;
-         more = true; 
+         more = true;
       }
       else if (hh && !rows && cols && ih) {    // calculate rows
          if (cols > 1)
             rows = (int)floor((ih-mtop-grid_thickness-mbottom)/hh - 0.5);
          else rows = (int)floor((ih-mtop-grid_thickness-mbottom)/hh);
-         more = true; 
+         more = true;
       }
       else if (!hh && rows && cols && ih) {    // calculate hh
          if (cols > 1) hh = (ih-mtop-grid_thickness-mbottom)/(0.5+rows);
          else hh = (ih-mtop-grid_thickness-mbottom)/rows;
-         more = true; 
+         more = true;
       }
 
       if (!more) break;
    }
-   
+
    if (!hs)
       throw runtime_error("unable to determine hex side from given values");
    if (!hw)
@@ -447,10 +447,10 @@ Grid::Grid(const map<string, string> &opt)
       // calculate actual grid width, height
       double aw = (0.25+0.75*cols)*hw+grid_thickness,
              ah = (0.5+rows)*hh+grid_thickness;
-      
+
       // margin adjustment
       double h = ((iw - mleft - mright) - aw)/2,
-             v = ((ih - mtop - mbottom) - ah)/2; 
+             v = ((ih - mtop - mbottom) - ah)/2;
 
       mleft   += h;
       mright  += h;
@@ -482,7 +482,7 @@ Grid::Grid(const map<string, string> &opt)
          coord_tilt -= 90;
          break;
       }
-      
+
       switch (coord_origin) {
       case UpperLeft:
          coord_origin = LowerLeft;
@@ -500,7 +500,7 @@ Grid::Grid(const map<string, string> &opt)
          break;
       }
    }
- 
+
    // adjust lowfirstcol if even cols and coordinate origin on the right
    if ((coord_origin == UpperRight || coord_origin == LowerRight) && !(cols%2))
       lowfirstcol = !lowfirstcol;
@@ -513,7 +513,7 @@ Grid::Grid(const map<string, string> &opt)
       if (output == PS) swap(rows, cols);
       else if (output == PNG) {
          swap(iw, ih);
-      
+
          // rotate margins
          double tmp = mright;
          mright = mtop;
@@ -531,7 +531,7 @@ Grid::Grid(const map<string, string> &opt)
       coord_bearing = fmod(coord_bearing, 360);
       if (coord_bearing < 0) coord_bearing += 360;
       coord_tilt = fmod(coord_tilt, 360);
-      if (coord_tilt < 0) coord_tilt += 360;  
+      if (coord_tilt < 0) coord_tilt += 360;
    }
 }
 
@@ -568,9 +568,9 @@ void Grid::parse_color(const char *o, const string &str, string &c)
    if (output == PS) {
       double r, g, b;
       char c1, c2;
-      
+
       s >> r >> c1 >> g >> c2 >> b;
-      if (s.fail() || !s.eof()  || c1 != ',' || c2 != ',') 
+      if (s.fail() || !s.eof()  || c1 != ',' || c2 != ',')
          throw runtime_error("invalid color format for " + string(o));
       if (r < 0 || r > 1) throw range_error("red value for " + string(o) +
          "is not in the range [0,1]");
@@ -584,15 +584,15 @@ void Grid::parse_color(const char *o, const string &str, string &c)
    }
    else {
       unsigned int h;
-      
+
       s >> hex >> h;
       if (s.fail() || !s.eof())
          throw runtime_error("invalid color format for " + string(o));
-    
+
       if (h > 0xFFFFFF) throw range_error(string(o) +
          " is not in the range [000000,FFFFFF]");
- 
-      s.clear(); 
+
+      s.clear();
       s << setfill('0') << setw(6) << hex << h;
    }
 
@@ -603,7 +603,7 @@ void Grid::parse_color(const char *o, const string &str, string &c)
 void Grid::parse_opacity(const char *o, const string &str, double &op)
 {
    if (output == PS) {
-      cerr << "opacity ignored for PostScript output" << endl; 
+      cerr << "opacity ignored for PostScript output" << endl;
       return;
    }
 
@@ -736,5 +736,5 @@ void Grid::parse_format(const string &str)
       else break;
    }
 
-   if (!i.eof()) throw runtime_error("bad coordinate format string");   
+   if (!i.eof()) throw runtime_error("bad coordinate format string");
 }

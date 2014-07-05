@@ -129,7 +129,7 @@ class Grid {
 
       double hw,          // hex width
              hh,          // hex height
-             hs,          // hex side 
+             hs,          // hex side
              iw,          // image width
              ih;          // image height
 

@@ -176,7 +176,7 @@ void parse_spec(istream &in, map<string, string> &opt) {
          case '\r':
             break;
          case '#':
-            do { 
+            do {
                in.get(c);
                if (c == '\n') {
                   ++line;
@@ -191,6 +191,7 @@ void parse_spec(istream &in, map<string, string> &opt) {
             break;
          }
          break;
+
       case KEY:
          switch (c) {
          case ' ':
@@ -228,6 +229,7 @@ void parse_spec(istream &in, map<string, string> &opt) {
             break;
          }
          break;
+
       case PRE_EQ:
          switch (c) {
          case ' ':
@@ -242,6 +244,7 @@ void parse_spec(istream &in, map<string, string> &opt) {
                " column " + lexical_cast<string>(col));
          }
          break;
+
       case POST_EQ:
          switch (c) {
          case ' ':
@@ -262,6 +265,7 @@ void parse_spec(istream &in, map<string, string> &opt) {
             break;
          }
          break;
+
       case QVAL:
          switch (c) {
          case '"':
@@ -282,6 +286,7 @@ void parse_spec(istream &in, map<string, string> &opt) {
             break;
          }
          break;
+
       case GUARD:
          switch (c) {
          case '\\':
@@ -300,6 +305,7 @@ void parse_spec(istream &in, map<string, string> &opt) {
          }
          state = QVAL;
          break;
+
       case VAL:
          switch (c) {
          case '=':
@@ -328,6 +334,7 @@ void parse_spec(istream &in, map<string, string> &opt) {
             break;
          }
          break;
+
       case END:
          switch (c) {
          case '\n':
@@ -340,7 +347,7 @@ void parse_spec(istream &in, map<string, string> &opt) {
          case '\r':
             break;
          case '#':
-            do { 
+            do {
                in.get(c);
                if (c == '\n') {
                   ++line;
