@@ -52,12 +52,15 @@ class Grid {
       void side_skip_path_svg(int n);
       void edge_path_svg(int n);
       void edge_path_reverse_svg(int n);
+
       void svg_write_header(ofstream & out);
       void svg_define_centers(ofstream & out);
       void svg_draw_coordinates(ofstream & out);
       void svg_define_grid(ofstream & out);
       void svg_draw_background(ofstream & out);
       void make_sandwich_defs(ofstream & out);
+      void make_first_column_in(ofstream & out);
+      void make_first_column_out(ofstream & out);
 
       // parse functions
       void parse_length(const char *o, const string &str, double &d);
